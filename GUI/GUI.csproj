@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5564B420-BA8C-44AD-9DE8-C740A20515DC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net48\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNangHome\UCMonAn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChucNangHome\UCMonAn.Designer.cs">
+      <DependentUpon>UCMonAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNangHome\UcOder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChucNangHome\UcOder.Designer.cs">
+      <DependentUpon>UcOder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNangHome\UCqlban.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChucNangHome\UCqlban.Designer.cs">
+      <DependentUpon>UCqlban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNangHome\UCQLnhanvien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChucNangHome\UCQLnhanvien.Designer.cs">
+      <DependentUpon>UCQLnhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNangHome\UCqlTaiKhoan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChucNangHome\UCqlTaiKhoan.Designer.cs">
+      <DependentUpon>UCqlTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNangHome\UCMonAn.resx">
+      <DependentUpon>UCMonAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNangHome\UcOder.resx">
+      <DependentUpon>UcOder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNangHome\UCqlban.resx">
+      <DependentUpon>UCqlban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNangHome\UCQLnhanvien.resx">
+      <DependentUpon>UCQLnhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNangHome\UCqlTaiKhoan.resx">
+      <DependentUpon>UCqlTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{b61a533b-4698-4998-8b27-ee117fb3a828}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{49512e6f-8a37-418d-a043-c6aba377cc9f}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{fd2a2503-9a4a-482a-acd5-e426b1490cd2}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-password-30 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restaurant-150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-macos-full-screen-20 blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-table-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restauran-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restauran-100 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\passhide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\passshow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thuc-an-tieng-anh-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restauran-1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-name-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-rice-bowl-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-admin-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-bill-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-graph-report-script-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restaurant-100 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nhân viên.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nv1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-money-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

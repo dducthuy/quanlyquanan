@@ -1,0 +1,11 @@
+D:\workspace\workspace\TH_web\D_A\do_an_1\QL_QUAN_AN\BUS\bin\Debug\BUS.dll
+D:\workspace\workspace\TH_web\D_A\do_an_1\QL_QUAN_AN\BUS\bin\Debug\BUS.pdb
+D:\workspace\workspace\TH_web\D_A\do_an_1\QL_QUAN_AN\BUS\bin\Debug\DAL.dll
+D:\workspace\workspace\TH_web\D_A\do_an_1\QL_QUAN_AN\BUS\bin\Debug\DTO.dll
+D:\workspace\workspace\TH_web\D_A\do_an_1\QL_QUAN_AN\BUS\bin\Debug\DAL.pdb
+D:\workspace\workspace\TH_web\D_A\do_an_1\QL_QUAN_AN\BUS\bin\Debug\DTO.pdb
+D:\workspace\workspace\TH_web\D_A\do_an_1\QL_QUAN_AN\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\workspace\workspace\TH_web\D_A\do_an_1\QL_QUAN_AN\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\workspace\workspace\TH_web\D_A\do_an_1\QL_QUAN_AN\BUS\obj\Debug\BUS.csproj.Up2Date
+D:\workspace\workspace\TH_web\D_A\do_an_1\QL_QUAN_AN\BUS\obj\Debug\BUS.dll
+D:\workspace\workspace\TH_web\D_A\do_an_1\QL_QUAN_AN\BUS\obj\Debug\BUS.pdb

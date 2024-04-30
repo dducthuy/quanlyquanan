@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|d:\\workspace\\workspace\\th_web\\d_a\\do_an_1\\ql_quan_an\\gui\\chucnanghome\\ucoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|solutionrelative:gui\\chucnanghome\\ucoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|d:\\workspace\\workspace\\th_web\\d_a\\do_an_1\\ql_quan_an\\gui\\chucnanghome\\ucoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|solutionrelative:gui\\chucnanghome\\ucoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49512E6F-8A37-418D-A043-C6ABA377CC9F}|DAL\\DAL.csproj|D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\dal\\hoadon_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49512E6F-8A37-418D-A043-C6ABA377CC9F}|DAL\\DAL.csproj|solutionrelative:dal\\hoadon_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD2A2503-9A4A-482A-ACD5-E426B1490CD2}|DTO\\DTO.csproj|D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\dto\\hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD2A2503-9A4A-482A-ACD5-E426B1490CD2}|DTO\\DTO.csproj|solutionrelative:dto\\hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49512E6F-8A37-418D-A043-C6ABA377CC9F}|DAL\\DAL.csproj|D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\dal\\ban_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49512E6F-8A37-418D-A043-C6ABA377CC9F}|DAL\\DAL.csproj|solutionrelative:dal\\ban_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|d:\\workspace\\workspace\\th_web\\d_a\\do_an_1\\ql_quan_an\\gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|solutionrelative:gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UcOder.cs [Design]",
+              "DocumentMoniker": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\ChucNangHome\\UcOder.cs",
+              "RelativeDocumentMoniker": "GUI\\ChucNangHome\\UcOder.cs",
+              "ToolTip": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\ChucNangHome\\UcOder.cs [Design]",
+              "RelativeToolTip": "GUI\\ChucNangHome\\UcOder.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T16:15:25.465Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\Program.cs",
+              "RelativeDocumentMoniker": "GUI\\Program.cs",
+              "ToolTip": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\Program.cs",
+              "RelativeToolTip": "GUI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T16:07:10.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Ban_Dal.cs",
+              "DocumentMoniker": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\DAL\\Ban_Dal.cs",
+              "RelativeDocumentMoniker": "DAL\\Ban_Dal.cs",
+              "ToolTip": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\DAL\\Ban_Dal.cs",
+              "RelativeToolTip": "DAL\\Ban_Dal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T15:40:08.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HoaDon.cs",
+              "DocumentMoniker": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\DTO\\HoaDon.cs",
+              "RelativeDocumentMoniker": "DTO\\HoaDon.cs",
+              "ToolTip": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\DTO\\HoaDon.cs",
+              "RelativeToolTip": "DTO\\HoaDon.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAAACEAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T15:21:05.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HoaDon_DAL.cs",
+              "DocumentMoniker": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\DAL\\HoaDon_DAL.cs",
+              "RelativeDocumentMoniker": "DAL\\HoaDon_DAL.cs",
+              "ToolTip": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\DAL\\HoaDon_DAL.cs",
+              "RelativeToolTip": "DAL\\HoaDon_DAL.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAuwCMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T14:35:35.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UcOder.cs",
+              "DocumentMoniker": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\ChucNangHome\\UcOder.cs",
+              "RelativeDocumentMoniker": "GUI\\ChucNangHome\\UcOder.cs",
+              "ToolTip": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\ChucNangHome\\UcOder.cs",
+              "RelativeToolTip": "GUI\\ChucNangHome\\UcOder.cs",
+              "ViewState": "AQIAAJ8AAAAAAAAAAAAQwKgAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T14:35:58.083Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
