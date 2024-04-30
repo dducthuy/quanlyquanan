@@ -47,5 +47,12 @@ namespace DAL
                 return 1;
             }
         }
+        // cap nhat lai 
+
+        public  void checkout(int MaHD,int MaBan)
+        {
+            string sql = string.Format("EXEC checkout @MaHD = {0}, @MaBan = {1} ", MaHD,MaBan);
+            DB.thucthisql(sql);
+        }
     }
 }

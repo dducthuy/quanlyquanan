@@ -174,5 +174,46 @@ namespace GUI.ChucNangHome
 
 
         }
+
+        private void gb1_Click(object sender, EventArgs e)
+        {
+
+        }
+        //thanh toan
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            
+            int mahd = HoaDon_DAL.layMaHD(mabn);
+            if(mahd != -1)
+            {
+                DialogResult result = MessageBox.Show("Thanh toan ", "Thông báo", MessageBoxButtons.YesNo,MessageBoxIcon.Stop);
+                if (result == DialogResult.Yes)
+                {
+                    HoaDon_DAL.checkout(mahd,mabn);
+                    Show(mabn);
+                }
+                DSban.Controls.Clear();
+                ThemBan();
+
+
+            }
+            else
+            {
+                MessageBox.Show("bàn chưa có hóa đơn","Cảnh báo!",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            }
+            DSban.Controls.Clear();
+            ThemBan();
+        }
+
+        private void txtreport_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtChuyen_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+
