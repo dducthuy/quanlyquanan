@@ -65,6 +65,12 @@ namespace BUS
                     return "Xóa thành công!";
                 }
             }
+            public void chuyenban(int maban, int mabandi)
+            {
+                
+               banDAL.Chuyenban(maban, mabandi);
+           
+            }
 
         }
     }

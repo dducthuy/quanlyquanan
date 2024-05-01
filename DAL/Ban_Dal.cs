@@ -14,8 +14,8 @@ namespace DAL
         DataBase_DAL DBConnect = new DataBase_DAL();
       
 
-        public static int TableWidth = 55;
-        public static int TableHeight = 55;
+        public static int TableWidth = 85;
+        public static int TableHeight = 85;
         
        
 
@@ -73,7 +73,12 @@ namespace DAL
             }
             return list;    
         }
-        
+        public void Chuyenban(int maban, int mabandi)
+        {
+            string sql = string.Format("EXEC HoaDonchuyenban @idBanDau = {0}, @idBanMoi = {1}",maban,mabandi);
+            DBConnect.thucthisql(sql);
+          //  return true;
+        }  
      
     }
 }

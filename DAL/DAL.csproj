@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ban_Dal.cs" />
+    <Compile Include="Ban_DAL.cs" />
     <Compile Include="ChiTietHD_DAL.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="DanhMuc_DAL.cs" />

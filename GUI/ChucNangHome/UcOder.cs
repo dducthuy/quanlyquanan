@@ -13,6 +13,7 @@ using DAL;
 using System.Collections;
 using System.Runtime.InteropServices.ComTypes;
 using System.Windows.Forms.Layout;
+using BUS.BUS;
 //using System.Web.UI.WebControls;
 
 
@@ -24,6 +25,7 @@ namespace GUI.ChucNangHome
         HoaDon_DAL HoaDon_DAL = new HoaDon_DAL();
         MenuHD_DAL menuHD = new MenuHD_DAL();
         DataBase_DAL DB = new DataBase_DAL();
+        Ban_DAL banDAL = new Ban_DAL();
         public string MaNV { get; set; }
 
         public UcOder(string maNV)
@@ -32,6 +34,7 @@ namespace GUI.ChucNangHome
             this.MaNV = maNV;
             ThemBan();
             loaddanhmuc();
+            loadban(cb);
             
         }
 
@@ -43,7 +46,7 @@ namespace GUI.ChucNangHome
         // thêm btn v
         public void ThemBan()
         {
-            Ban_DAL banDAL = new Ban_DAL();
+           
             List<Ban> dsban = banDAL.loadBan();
 
             foreach (Ban ban in dsban)
@@ -76,7 +79,11 @@ namespace GUI.ChucNangHome
               DSban.Controls.Add(btn);
             }
         }
-
+        public void loadban(ComboBox CB)
+        {
+            CB.DataSource = banDAL.loadBan();
+            CB.DisplayMember = "TenBan";  
+        }
         public void Show(int maban)
         {
             lv1.Items.Clear();
@@ -205,15 +212,24 @@ namespace GUI.ChucNangHome
             ThemBan();
         }
 
-        private void txtreport_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void txtChuyen_Click(object sender, EventArgs e)
         {
+            int mabanchuyen = (cb.SelectedItem as Ban).MaBan;
+            DialogResult result = MessageBox.Show("ban có muôn chuyển bàn không ", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Stop);
+            if (result == DialogResult.Yes)
+            {
+                banDAL.Chuyenban(mabn,mabanchuyen);
+            }
+            DSban.Controls.Clear();
+            ThemBan();
+            Show(mabanchuyen);
 
         }
+
+       
+        
     }
 }
 
