@@ -24,3 +24,4 @@ D:\workspace\workspace\TH_web\D_A\do_an_1\QL_QUAN_AN\GUI\obj\Debug\GUI.csproj.Co
 D:\workspace\workspace\TH_web\D_A\do_an_1\QL_QUAN_AN\GUI\obj\Debug\GUI.csproj.Up2Date
 D:\workspace\workspace\TH_web\D_A\do_an_1\QL_QUAN_AN\GUI\obj\Debug\GUI.exe
 D:\workspace\workspace\TH_web\D_A\do_an_1\QL_QUAN_AN\GUI\obj\Debug\GUI.pdb
+D:\workspace\workspace\TH_web\D_A\do_an_1\QL_quan_an\GUI\obj\Debug\GUI.ChucNangHome.UC_thongke.resources

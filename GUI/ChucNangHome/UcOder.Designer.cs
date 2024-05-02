@@ -30,6 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.gb1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.lv1 = new System.Windows.Forms.ListView();
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtreport = new Guna.UI2.WinForms.Guna2Button();
             this.sl = new Guna.UI2.WinForms.Guna2NumericUpDown();
@@ -37,11 +42,6 @@
             this.txttongtien = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.txtmon = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.lv1 = new System.Windows.Forms.ListView();
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnThêm = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -78,6 +78,42 @@
             this.gb1.TabIndex = 152;
             this.gb1.Click += new System.EventHandler(this.gb1_Click);
             // 
+            // lv1
+            // 
+            this.lv1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader5,
+            this.columnHeader6,
+            this.columnHeader7,
+            this.columnHeader8});
+            this.lv1.GridLines = true;
+            this.lv1.HideSelection = false;
+            this.lv1.Location = new System.Drawing.Point(-2, 157);
+            this.lv1.Name = "lv1";
+            this.lv1.Size = new System.Drawing.Size(347, 300);
+            this.lv1.TabIndex = 125;
+            this.lv1.UseCompatibleStateImageBehavior = false;
+            this.lv1.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Tên ";
+            this.columnHeader5.Width = 99;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "SL";
+            this.columnHeader6.Width = 46;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Giá";
+            this.columnHeader7.Width = 78;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Thành Tiền";
+            this.columnHeader8.Width = 119;
+            // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
@@ -103,7 +139,6 @@
             this.txtreport.Name = "txtreport";
             this.txtreport.Size = new System.Drawing.Size(60, 39);
             this.txtreport.TabIndex = 159;
-        
             // 
             // sl
             // 
@@ -219,41 +254,7 @@
             this.txtmon.Name = "txtmon";
             this.txtmon.Size = new System.Drawing.Size(254, 36);
             this.txtmon.TabIndex = 126;
-            // 
-            // lv1
-            // 
-            this.lv1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader5,
-            this.columnHeader6,
-            this.columnHeader7,
-            this.columnHeader8});
-            this.lv1.GridLines = true;
-            this.lv1.HideSelection = false;
-            this.lv1.Location = new System.Drawing.Point(-2, 157);
-            this.lv1.Name = "lv1";
-            this.lv1.Size = new System.Drawing.Size(347, 300);
-            this.lv1.TabIndex = 125;
-            this.lv1.UseCompatibleStateImageBehavior = false;
-            this.lv1.View = System.Windows.Forms.View.Details;       // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Tên ";
-            this.columnHeader5.Width = 99;
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "SL";
-            this.columnHeader6.Width = 46;
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "Giá";
-            this.columnHeader7.Width = 78;
-            // 
-            // columnHeader8
-            // 
-            this.columnHeader8.Text = "Thành Tiền";
-            this.columnHeader8.Width = 119;
+            this.txtmon.SelectedIndexChanged += new System.EventHandler(this.txtmon_SelectedIndexChanged);
             // 
             // btnThêm
             // 
@@ -337,7 +338,7 @@
             this.cb.Name = "cb";
             this.cb.Size = new System.Drawing.Size(108, 36);
             this.cb.TabIndex = 158;
-       
+            // 
             // txtChuyen
             // 
             this.txtChuyen.BorderRadius = 15;

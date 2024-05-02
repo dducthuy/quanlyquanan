@@ -112,5 +112,12 @@ namespace GUI
         {
 
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            UC_thongke tk = new UC_thongke();
+            Panel.Controls.Clear();
+            Panel.Controls.Add((tk));
+        }
     }
 }

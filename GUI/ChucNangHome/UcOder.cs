@@ -13,7 +13,7 @@ using DAL;
 using System.Collections;
 using System.Runtime.InteropServices.ComTypes;
 using System.Windows.Forms.Layout;
-using BUS.BUS;
+
 //using System.Web.UI.WebControls;
 
 
@@ -22,10 +22,11 @@ namespace GUI.ChucNangHome
     public partial class UcOder : UserControl
     {
         ChiTietHD_DAL cthd = new ChiTietHD_DAL();
-        HoaDon_DAL HoaDon_DAL = new HoaDon_DAL();
+       HoaDon_BUS HoaDon = new HoaDon_BUS();
         MenuHD_DAL menuHD = new MenuHD_DAL();
         DataBase_DAL DB = new DataBase_DAL();
         Ban_DAL banDAL = new Ban_DAL();
+       
         public string MaNV { get; set; }
 
         public UcOder(string maNV)
@@ -147,7 +148,7 @@ namespace GUI.ChucNangHome
         {
         
 
-            int mahd = HoaDon_DAL.layMaHD(mabn);
+            int mahd = HoaDon.layMaHD(mabn);
             string manv = this.MaNV;
 
             string mamon = (txtmon.SelectedItem as MonAn).MaMon;
@@ -156,9 +157,16 @@ namespace GUI.ChucNangHome
 
             if (mahd == -1)
             {
-                HoaDon_DAL.ThemHD(mabn, manv);
-                cthd.NhapCT(HoaDon_DAL.getMaxMaHD(), mamon, soluong);
-                Show(mabn);
+                if (soluong < 1)
+                {
+                    MessageBox.Show("tạo hóa đơn số lượng không hợp lệ!","Cảnh Báo!",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    HoaDon.ThemHD(mabn, manv);
+                    cthd.NhapCT(HoaDon.getMaxMaHD(), mamon, soluong);
+                    Show(mabn);
+                }
             }
             else
             {
@@ -190,13 +198,13 @@ namespace GUI.ChucNangHome
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             
-            int mahd = HoaDon_DAL.layMaHD(mabn);
+            int mahd = HoaDon.layMaHD(mabn);
             if(mahd != -1)
             {
                 DialogResult result = MessageBox.Show("Thanh toan ", "Thông báo", MessageBoxButtons.YesNo,MessageBoxIcon.Stop);
                 if (result == DialogResult.Yes)
                 {
-                    HoaDon_DAL.checkout(mahd,mabn);
+                    HoaDon.checkout(mahd,mabn);
                     Show(mabn);
                 }
                 DSban.Controls.Clear();
@@ -228,8 +236,10 @@ namespace GUI.ChucNangHome
 
         }
 
-       
-        
+        private void txtmon_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

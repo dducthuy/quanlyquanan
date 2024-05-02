@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using DTO;
@@ -53,6 +54,17 @@ namespace DAL
         {
             string sql = string.Format("EXEC checkout @MaHD = {0}, @MaBan = {1} ", MaHD,MaBan);
             DB.thucthisql(sql);
+        }
+
+        public DataTable DTThangnam(int ngay, int nam)
+        {
+            string sql = string.Format("exec [dbo].[Hoadonthangnam] {0},{1}", ngay,nam);
+           return DB.getData(sql);
+        }
+        public DataTable DTNgay(string ngay)
+        {
+            string sql = string.Format("EXEC HoadonNgay '{0}'", ngay);
+          return  DB.getData(sql);
         }
     }
 }

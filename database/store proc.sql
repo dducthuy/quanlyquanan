@@ -230,5 +230,76 @@ END
 --    DROP TABLE #TempSoLuongChiTietHoaDon;
 --END;
 
+CREATE PROCEDURE Hoadonthangnam
+    @Thang INT,
+    @Nam INT
+AS
+BEGIN
+    -- Nếu @Thang = 0, tức là không chỉ định tháng cụ thể, thực hiện thống kê theo năm
+    IF @Thang = 0
+    BEGIN
+        SELECT
+            SUM(MA.Gia * CTHD.SoLuong) AS  TongTien,
+            CTHD.MaHD,
+            HD.NgayTao,
+            HD.NgayThanhToan
+        FROM
+            HoaDon HD
+            INNER JOIN ChiTietHoaDon CTHD ON HD.MaHD = CTHD.MaHD
+            INNER JOIN MonAn MA ON CTHD.MaMon = MA.MaMon
+        WHERE
+            YEAR(HD.NgayThanhToan) = @Nam
+            AND HD.TinhTrang = '0'
+        GROUP BY
+            CTHD.MaHD,
+            HD.NgayTao,
+            HD.NgayThanhToan;
+    END
+    ELSE
+    BEGIN
+        -- Nếu @Thang khác 0, thực hiện thống kê theo tháng/năm
+        SELECT
+            SUM(MA.Gia * CTHD.SoLuong) AS  TongTien,
+            CTHD.MaHD,
+            HD.NgayTao,
+            HD.NgayThanhToan
+        FROM
+            HoaDon HD
+            INNER JOIN ChiTietHoaDon CTHD ON HD.MaHD = CTHD.MaHD
+            INNER JOIN MonAn MA ON CTHD.MaMon = MA.MaMon
+        WHERE
+            MONTH(HD.NgayThanhToan) = @Thang
+            AND YEAR(HD.NgayThanhToan) = @Nam
+            AND HD.TinhTrang = '0'
+        GROUP BY
+            CTHD.MaHD,
+            HD.NgayTao,
+            HD.NgayThanhToan;
+    END
+END;
+CREATE PROCEDURE HoadonNgay
+    @Ngay DATE
+AS
+BEGIN
+    SELECT
+        SUM(MA.Gia * CTHD.SoLuong) AS  TongTien,
+        CTHD.MaHD,
+        HD.NgayTao,
+        HD.NgayThanhToan
+    FROM
+        HoaDon HD
+        INNER JOIN ChiTietHoaDon CTHD ON HD.MaHD = CTHD.MaHD
+        INNER JOIN MonAn MA ON CTHD.MaMon = MA.MaMon
+    WHERE
+        CONVERT(DATE, HD.NgayThanhToan) = @Ngay
+        AND HD.TinhTrang = '0'
+    GROUP BY
+        CTHD.MaHD,
+        HD.NgayTao,
+        HD.NgayThanhToan;
+END;
+drop procedure Hoadonthangnam
 
+EXEC HoadonNgay '2024-05-02'
+--drop procedure Hoadonthangnam
 

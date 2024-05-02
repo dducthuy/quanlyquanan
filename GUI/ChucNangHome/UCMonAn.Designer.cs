@@ -169,6 +169,7 @@
             this.cbDM.Name = "cbDM";
             this.cbDM.Size = new System.Drawing.Size(147, 36);
             this.cbDM.TabIndex = 81;
+            this.cbDM.SelectedIndexChanged += new System.EventHandler(this.cbDM_SelectedIndexChanged);
             // 
             // guna2Separator4
             // 

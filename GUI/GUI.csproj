@@ -88,6 +88,12 @@
     <Compile Include="ChucNangHome\UCqlTaiKhoan.Designer.cs">
       <DependentUpon>UCqlTaiKhoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChucNangHome\UC_thongke.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChucNangHome\UC_thongke.Designer.cs">
+      <DependentUpon>UC_thongke.cs</DependentUpon>
+    </Compile>
     <Compile Include="DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNangHome\UCqlTaiKhoan.resx">
       <DependentUpon>UCqlTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNangHome\UC_thongke.resx">
+      <DependentUpon>UC_thongke.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>

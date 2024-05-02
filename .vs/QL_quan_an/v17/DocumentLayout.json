@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\gui\\chucnanghome\\ucoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|d:\\workspace\\workspace\\th_web\\d_a\\do_an_1\\ql_quan_an\\gui\\chucnanghome\\uc_thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|solutionrelative:gui\\chucnanghome\\uc_thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|d:\\workspace\\workspace\\th_web\\d_a\\do_an_1\\ql_quan_an\\gui\\chucnanghome\\uc_thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|solutionrelative:gui\\chucnanghome\\uc_thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B61A533B-4698-4998-8B27-EE117FB3A828}|BUS\\BUS.csproj|d:\\workspace\\workspace\\th_web\\d_a\\do_an_1\\ql_quan_an\\bus\\hoadon_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B61A533B-4698-4998-8B27-EE117FB3A828}|BUS\\BUS.csproj|solutionrelative:bus\\hoadon_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49512E6F-8A37-418D-A043-C6ABA377CC9F}|DAL\\DAL.csproj|d:\\workspace\\workspace\\th_web\\d_a\\do_an_1\\ql_quan_an\\dal\\hoadon_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49512E6F-8A37-418D-A043-C6ABA377CC9F}|DAL\\DAL.csproj|solutionrelative:dal\\hoadon_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|d:\\workspace\\workspace\\th_web\\d_a\\do_an_1\\ql_quan_an\\gui\\chucnanghome\\ucoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|solutionrelative:gui\\chucnanghome\\ucoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B61A533B-4698-4998-8B27-EE117FB3A828}|BUS\\BUS.csproj|d:\\workspace\\workspace\\th_web\\d_a\\do_an_1\\ql_quan_an\\bus\\ban_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B61A533B-4698-4998-8B27-EE117FB3A828}|BUS\\BUS.csproj|solutionrelative:bus\\ban_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|d:\\workspace\\workspace\\th_web\\d_a\\do_an_1\\ql_quan_an\\gui\\chucnanghome\\ucoder.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|solutionrelative:gui\\chucnanghome\\ucoder.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|d:\\workspace\\workspace\\th_web\\d_a\\do_an_1\\ql_quan_an\\gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|solutionrelative:gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\gui\\chucnanghome\\ucoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|solutionrelative:gui\\chucnanghome\\ucoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49512E6F-8A37-418D-A043-C6ABA377CC9F}|DAL\\DAL.csproj|D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\dal\\ban_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49512E6F-8A37-418D-A043-C6ABA377CC9F}|DAL\\DAL.csproj|solutionrelative:dal\\ban_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FD2A2503-9A4A-482A-ACD5-E426B1490CD2}|DTO\\DTO.csproj|d:\\workspace\\workspace\\th_web\\d_a\\do_an_1\\ql_quan_an\\dto\\menuhd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD2A2503-9A4A-482A-ACD5-E426B1490CD2}|DTO\\DTO.csproj|solutionrelative:dto\\menuhd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,83 +34,83 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Ban_BUS.cs",
-              "DocumentMoniker": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\BUS\\Ban_BUS.cs",
-              "RelativeDocumentMoniker": "BUS\\Ban_BUS.cs",
-              "ToolTip": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\BUS\\Ban_BUS.cs",
-              "RelativeToolTip": "BUS\\Ban_BUS.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAkwEYAAAAwAAAA",
+              "DocumentIndex": 5,
+              "Title": "MenuHD.cs",
+              "DocumentMoniker": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\DTO\\MenuHD.cs",
+              "RelativeDocumentMoniker": "DTO\\MenuHD.cs",
+              "ToolTip": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\DTO\\MenuHD.cs",
+              "RelativeToolTip": "DTO\\MenuHD.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T17:01:12.812Z",
+              "WhenOpened": "2024-05-02T18:38:56.815Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UcOder.Designer.cs",
-              "DocumentMoniker": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\ChucNangHome\\UcOder.Designer.cs",
-              "RelativeDocumentMoniker": "GUI\\ChucNangHome\\UcOder.Designer.cs",
-              "ToolTip": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\ChucNangHome\\UcOder.Designer.cs",
-              "RelativeToolTip": "GUI\\ChucNangHome\\UcOder.Designer.cs",
-              "ViewState": "AQIAAG4BAAAAAAAAAAAWwFMBAAAHAAAA",
+              "Title": "HoaDon_BUS.cs",
+              "DocumentMoniker": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\BUS\\HoaDon_BUS.cs",
+              "RelativeDocumentMoniker": "BUS\\HoaDon_BUS.cs",
+              "ToolTip": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\BUS\\HoaDon_BUS.cs",
+              "RelativeToolTip": "BUS\\HoaDon_BUS.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAQwCYAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T16:58:08.061Z",
+              "WhenOpened": "2024-05-02T18:22:10.731Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\Program.cs",
-              "RelativeDocumentMoniker": "GUI\\Program.cs",
-              "ToolTip": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\Program.cs",
-              "RelativeToolTip": "GUI\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAsAAAA",
+              "Title": "HoaDon_DAL.cs",
+              "DocumentMoniker": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\DAL\\HoaDon_DAL.cs",
+              "RelativeDocumentMoniker": "DAL\\HoaDon_DAL.cs",
+              "ToolTip": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\DAL\\HoaDon_DAL.cs",
+              "RelativeToolTip": "DAL\\HoaDon_DAL.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAkwD4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T08:30:06.544Z",
+              "WhenOpened": "2024-05-02T18:11:09.074Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UcOder.cs [Design]",
-              "DocumentMoniker": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\ChucNangHome\\UcOder.cs",
-              "RelativeDocumentMoniker": "GUI\\ChucNangHome\\UcOder.cs",
-              "ToolTip": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\ChucNangHome\\UcOder.cs [Design]",
-              "RelativeToolTip": "GUI\\ChucNangHome\\UcOder.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "UC_thongke.cs",
+              "DocumentMoniker": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\ChucNangHome\\UC_thongke.cs",
+              "RelativeDocumentMoniker": "GUI\\ChucNangHome\\UC_thongke.cs",
+              "ToolTip": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\ChucNangHome\\UC_thongke.cs",
+              "RelativeToolTip": "GUI\\ChucNangHome\\UC_thongke.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAAAFUAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T16:15:25.465Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Ban_DAL.cs",
-              "DocumentMoniker": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\DAL\\Ban_DAL.cs",
-              "RelativeDocumentMoniker": "DAL\\Ban_DAL.cs",
-              "ToolTip": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\DAL\\Ban_DAL.cs",
-              "RelativeToolTip": "DAL\\Ban_DAL.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAADwv08AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T15:40:08.352Z",
+              "WhenOpened": "2024-05-02T18:10:19.73Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UC_thongke.cs [Design]",
+              "DocumentMoniker": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\ChucNangHome\\UC_thongke.cs",
+              "RelativeDocumentMoniker": "GUI\\ChucNangHome\\UC_thongke.cs",
+              "ToolTip": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\ChucNangHome\\UC_thongke.cs [Design]",
+              "RelativeToolTip": "GUI\\ChucNangHome\\UC_thongke.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T18:10:04.729Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "UcOder.cs",
               "DocumentMoniker": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\ChucNangHome\\UcOder.cs",
               "RelativeDocumentMoniker": "GUI\\ChucNangHome\\UcOder.cs",
               "ToolTip": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\ChucNangHome\\UcOder.cs",
               "RelativeToolTip": "GUI\\ChucNangHome\\UcOder.cs",
-              "ViewState": "AQIAANIAAAAAAAAAAAAuwOUAAAAAAAAA",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAhwJQAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T14:35:58.083Z",
+              "WhenOpened": "2024-05-02T17:53:01.682Z",
               "EditorCaption": ""
             }
           ]

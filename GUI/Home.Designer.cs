@@ -332,6 +332,7 @@
             this.guna2Button1.Size = new System.Drawing.Size(188, 45);
             this.guna2Button1.TabIndex = 0;
             this.guna2Button1.Text = "Thống kê";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2BorderlessForm1
             // 

@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
 using DTO;
+using DAL;
 namespace GUI.ChucNangHome
 {
     public partial class UCMonAn : UserControl
@@ -21,6 +22,7 @@ namespace GUI.ChucNangHome
         {
             InitializeComponent();
             dgv1.DataSource = monbusc.LayDuLieu();
+            loaddanhmuc();
         }
 
         private void UCMonAn_Load(object sender, EventArgs e)
@@ -38,7 +40,7 @@ namespace GUI.ChucNangHome
             ma.TenMon = txtTen.Text;
             ma.MaMon = txtId.Text;
             ma.Gia = float.Parse(txtGia.Text);
-            ma.MaDM = cbDM.Text;
+            ma.MaDM = (cbDM.SelectedItem as DanhMuc).MaDM;
             try
             {
                 bool check = monbusc.SuaMonAn(ma);
@@ -92,7 +94,7 @@ namespace GUI.ChucNangHome
             ma.TenMon = txtTen.Text;
             ma.MaMon = txtId.Text;
             ma.Gia = float.Parse(txtGia.Text);
-            ma.MaDM = cbDM.Text;
+            ma.MaDM = (cbDM.SelectedItem as DanhMuc).MaDM;
             try
             {
                 bool checck = monbusc.ThemMonAn(ma);
@@ -157,6 +159,19 @@ namespace GUI.ChucNangHome
 
             }
 
+        }
+        void loaddanhmuc()
+        {
+            DanhMuc_DAL dmDAL = new DanhMuc_DAL();
+
+            List<DanhMuc> dsdm = dmDAL.Laydsdm();
+            cbDM.DataSource = dsdm;
+            cbDM.DisplayMember = "TenDM";
+
+        }
+        private void cbDM_SelectedIndexChanged(object sender, EventArgs e)
+        {
+         
         }
     }
 }
