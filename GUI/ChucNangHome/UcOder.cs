@@ -13,6 +13,7 @@ using DAL;
 using System.Collections;
 using System.Runtime.InteropServices.ComTypes;
 using System.Windows.Forms.Layout;
+using BUS.BUS;
 
 //using System.Web.UI.WebControls;
 
@@ -21,11 +22,11 @@ namespace GUI.ChucNangHome
 {
     public partial class UcOder : UserControl
     {
-        ChiTietHD_DAL cthd = new ChiTietHD_DAL();
+        ChitietHD_BUS cthd = new ChitietHD_BUS();
        HoaDon_BUS HoaDon = new HoaDon_BUS();
         MenuHD_DAL menuHD = new MenuHD_DAL();
         DataBase_DAL DB = new DataBase_DAL();
-        Ban_DAL banDAL = new Ban_DAL();
+        Ban_BUS Ban = new Ban_BUS();
        
         public string MaNV { get; set; }
 
@@ -48,7 +49,7 @@ namespace GUI.ChucNangHome
         public void ThemBan()
         {
            
-            List<Ban> dsban = banDAL.loadBan();
+            List<Ban> dsban = Ban.loadBan();
 
             foreach (Ban ban in dsban)
             {
@@ -63,14 +64,14 @@ namespace GUI.ChucNangHome
 
                 btn.Text = ban.Tenban + Environment.NewLine + ban.TrangThai;
 
-                // Set ForeColor of button text
+ 
                 btn.ForeColor = Color.FromArgb(31, 166, 243);
 
                 switch (ban.TrangThai)
                 {
                     case "Trống":
                         btn.BackColor = Color.BlueViolet;
-                        btn.ForeColor = Color.White; // Set the text color for 'Trống' status
+                        btn.ForeColor = Color.White; 
                         break;
                     default:
                         btn.BackColor = Color.White;
@@ -82,7 +83,7 @@ namespace GUI.ChucNangHome
         }
         public void loadban(ComboBox CB)
         {
-            CB.DataSource = banDAL.loadBan();
+            CB.DataSource = Ban.loadBan();
             CB.DisplayMember = "TenBan";  
         }
         public void Show(int maban)
@@ -146,15 +147,11 @@ namespace GUI.ChucNangHome
         // them mon vao hoa don
         private void btnThêm_Click(object sender, EventArgs e)
         {
-        
-
             int mahd = HoaDon.layMaHD(mabn);
             string manv = this.MaNV;
-
             string mamon = (txtmon.SelectedItem as MonAn).MaMon;
             int soluong = (int)sl.Value;
-    
-
+        
             if (mahd == -1)
             {
                 if (soluong < 1)
@@ -164,30 +161,43 @@ namespace GUI.ChucNangHome
                 else
                 {
                     HoaDon.ThemHD(mabn, manv);
-                    cthd.NhapCT(HoaDon.getMaxMaHD(), mamon, soluong);
+                    cthd.nhapCT(HoaDon.getMaxMaHD(), mamon, soluong);
                     Show(mabn);
                 }
             }
             else
             {
-                DialogResult result = MessageBox.Show("Thêm món ", "Thông báo", MessageBoxButtons.YesNo);
-
-                if (result == DialogResult.Yes)
+                int check = cthd.ckeckmonhoadon(mahd, mamon);
+             
+                if (check < 1)
                 {
-                    cthd.NhapCT(mahd, mamon, soluong);
-                    Show(mabn);
+                    if (soluong < 1)
+                    {
+                        MessageBox.Show("Số lượng phải lớn hơn 0 khi thêm món mới.");
+                        return;
+                    }
+                    else
+                    {
+                        DialogResult result = MessageBox.Show("Món này chưa có trong hóa đơn. Bạn có muốn thêm vào không?", "Thông báo", MessageBoxButtons.YesNo);
+                        if (result == DialogResult.Yes)
+                        {
+                            cthd.nhapCT(mahd, mamon, soluong);
+                            Show(mabn); 
+                        }
+                    }
                 }
-
-              
-               
+                else
+                {
+                    DialogResult result = MessageBox.Show("Món này đã có trong hóa đơn. Bạn có muốn tiếp tục thêm?", "Thông báo", MessageBoxButtons.YesNo);
+                    if (result == DialogResult.Yes)
+                    {
+                        cthd.nhapCT(mahd, mamon, soluong);
+                        Show(mabn); 
+                    }
+                }
             }
             DSban.Controls.Clear();
             ThemBan();
-
-
-
-
-
         }
 
         private void gb1_Click(object sender, EventArgs e)
@@ -216,8 +226,7 @@ namespace GUI.ChucNangHome
             {
                 MessageBox.Show("bàn chưa có hóa đơn","Cảnh báo!",MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
-            DSban.Controls.Clear();
-            ThemBan();
+          
         }
 
        
@@ -228,7 +237,7 @@ namespace GUI.ChucNangHome
             DialogResult result = MessageBox.Show("ban có muôn chuyển bàn không ", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Stop);
             if (result == DialogResult.Yes)
             {
-                banDAL.Chuyenban(mabn,mabanchuyen);
+                Ban.chuyenban(mabn,mabanchuyen);
             }
             DSban.Controls.Clear();
             ThemBan();

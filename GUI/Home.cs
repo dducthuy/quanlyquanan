@@ -119,5 +119,20 @@ namespace GUI
             Panel.Controls.Clear();
             Panel.Controls.Add((tk));
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DangNhap d = new DangNhap();
+           
+            d.ShowDialog();
+        }
+
+        private void btndanhmuc_Click(object sender, EventArgs e)
+        {
+            UCdanhmuc tk = new UCdanhmuc();
+            Panel.Controls.Clear();
+            Panel.Controls.Add((tk));
+        }
     }
 }

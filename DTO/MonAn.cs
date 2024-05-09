@@ -28,8 +28,10 @@ namespace DTO
             this.MaMon = row["MaMon"].ToString();
             this.TenMon = row["TenMon"].ToString();
             this.Gia = row["Gia"] != DBNull.Value ? Convert.ToSingle(row["Gia"]) : (float?)null;
-            this.Cell = row["Cell"] != DBNull.Value ? Convert.ToInt32(row["Cell"]) : (int?)null;
 
+            this.Cell = row["Cell"] != DBNull.Value ? Convert.ToInt32(row["Cell"]) : (int?)null;
+           
+            
         }
         public string MaMon { get; set; }
         public string TenMon { get; set; }

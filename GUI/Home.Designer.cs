@@ -36,16 +36,17 @@
             this.btnMax = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btnclose = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.txtMaNV = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnout = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.btndanhmuc = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHiden)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMax)).BeginInit();
@@ -124,13 +125,14 @@
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.Controls.Add(this.btndanhmuc);
+            this.guna2Panel1.Controls.Add(this.guna2Button7);
             this.guna2Panel1.Controls.Add(this.txtMaNV);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
-            this.guna2Panel1.Controls.Add(this.guna2Button7);
             this.guna2Panel1.Controls.Add(this.guna2Button6);
             this.guna2Panel1.Controls.Add(this.guna2Button5);
             this.guna2Panel1.Controls.Add(this.guna2Button3);
-            this.guna2Panel1.Controls.Add(this.guna2Button2);
+            this.guna2Panel1.Controls.Add(this.btnout);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.Controls.Add(this.guna2Button1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -139,6 +141,31 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(191, 563);
             this.guna2Panel1.TabIndex = 25;
+            // 
+            // guna2Button7
+            // 
+            this.guna2Button7.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button7.BorderColor = System.Drawing.Color.White;
+            this.guna2Button7.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.guna2Button7.BorderThickness = 1;
+            this.guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(166)))), ((int)(((byte)(243)))));
+            this.guna2Button7.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.guna2Button7.ForeColor = System.Drawing.Color.White;
+            this.guna2Button7.Image = global::GUI.Properties.Resources.icons8_admin_30;
+            this.guna2Button7.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button7.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2Button7.ImeMode = System.Windows.Forms.ImeMode.Alpha;
+            this.guna2Button7.Location = new System.Drawing.Point(0, 482);
+            this.guna2Button7.Name = "guna2Button7";
+            this.guna2Button7.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.guna2Button7.Size = new System.Drawing.Size(188, 45);
+            this.guna2Button7.TabIndex = 14;
+            this.guna2Button7.Text = "Admin";
+            this.guna2Button7.Click += new System.EventHandler(this.guna2Button7_Click);
             // 
             // txtMaNV
             // 
@@ -176,31 +203,6 @@
             this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "MaNV";
             // 
-            // guna2Button7
-            // 
-            this.guna2Button7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button7.BorderColor = System.Drawing.Color.White;
-            this.guna2Button7.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-            this.guna2Button7.BorderThickness = 1;
-            this.guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(166)))), ((int)(((byte)(243)))));
-            this.guna2Button7.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.guna2Button7.ForeColor = System.Drawing.Color.White;
-            this.guna2Button7.Image = global::GUI.Properties.Resources.icons8_admin_30;
-            this.guna2Button7.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button7.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button7.ImeMode = System.Windows.Forms.ImeMode.Alpha;
-            this.guna2Button7.Location = new System.Drawing.Point(0, 429);
-            this.guna2Button7.Name = "guna2Button7";
-            this.guna2Button7.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.guna2Button7.Size = new System.Drawing.Size(188, 45);
-            this.guna2Button7.TabIndex = 14;
-            this.guna2Button7.Text = "Admin";
-            this.guna2Button7.Click += new System.EventHandler(this.guna2Button7_Click);
-            // 
             // guna2Button6
             // 
             this.guna2Button6.BackColor = System.Drawing.Color.Transparent;
@@ -217,7 +219,7 @@
             this.guna2Button6.Image = global::GUI.Properties.Resources.icons8_table_30;
             this.guna2Button6.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button6.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button6.Location = new System.Drawing.Point(0, 378);
+            this.guna2Button6.Location = new System.Drawing.Point(0, 329);
             this.guna2Button6.Name = "guna2Button6";
             this.guna2Button6.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.guna2Button6.Size = new System.Drawing.Size(188, 45);
@@ -241,7 +243,7 @@
             this.guna2Button5.Image = global::GUI.Properties.Resources.icons8_rice_bowl_30;
             this.guna2Button5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button5.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button5.Location = new System.Drawing.Point(0, 327);
+            this.guna2Button5.Location = new System.Drawing.Point(0, 278);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.guna2Button5.Size = new System.Drawing.Size(188, 45);
@@ -265,35 +267,36 @@
             this.guna2Button3.Image = global::GUI.Properties.Resources.icons8_table_30;
             this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button3.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button3.Location = new System.Drawing.Point(0, 275);
+            this.guna2Button3.Location = new System.Drawing.Point(0, 226);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(188, 45);
             this.guna2Button3.TabIndex = 10;
             this.guna2Button3.Text = "oder";
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
-            // guna2Button2
+            // btnout
             // 
-            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.BorderColor = System.Drawing.Color.White;
-            this.guna2Button2.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-            this.guna2Button2.BorderThickness = 1;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(166)))), ((int)(((byte)(243)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Image = global::GUI.Properties.Resources.icons8_bill_30;
-            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button2.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button2.Location = new System.Drawing.Point(0, 224);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.guna2Button2.Size = new System.Drawing.Size(188, 45);
-            this.guna2Button2.TabIndex = 9;
-            this.guna2Button2.Text = "Hóa Đơn";
+            this.btnout.BackColor = System.Drawing.Color.Transparent;
+            this.btnout.BorderColor = System.Drawing.Color.White;
+            this.btnout.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.btnout.BorderThickness = 1;
+            this.btnout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(166)))), ((int)(((byte)(243)))));
+            this.btnout.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.btnout.ForeColor = System.Drawing.Color.White;
+            this.btnout.Image = global::GUI.Properties.Resources.icons8_log_out_30;
+            this.btnout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnout.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnout.Location = new System.Drawing.Point(0, 431);
+            this.btnout.Name = "btnout";
+            this.btnout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnout.Size = new System.Drawing.Size(188, 45);
+            this.btnout.TabIndex = 9;
+            this.btnout.Text = "Đăng xuất";
+            this.btnout.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2PictureBox1
             // 
@@ -341,6 +344,30 @@
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
+            // btndanhmuc
+            // 
+            this.btndanhmuc.BackColor = System.Drawing.Color.Transparent;
+            this.btndanhmuc.BorderColor = System.Drawing.Color.White;
+            this.btndanhmuc.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.btndanhmuc.BorderThickness = 1;
+            this.btndanhmuc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btndanhmuc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btndanhmuc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btndanhmuc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btndanhmuc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(166)))), ((int)(((byte)(243)))));
+            this.btndanhmuc.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.btndanhmuc.ForeColor = System.Drawing.Color.White;
+            this.btndanhmuc.Image = global::GUI.Properties.Resources.icons8_bill_30;
+            this.btndanhmuc.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btndanhmuc.ImageSize = new System.Drawing.Size(40, 40);
+            this.btndanhmuc.Location = new System.Drawing.Point(0, 380);
+            this.btndanhmuc.Name = "btndanhmuc";
+            this.btndanhmuc.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btndanhmuc.Size = new System.Drawing.Size(188, 45);
+            this.btndanhmuc.TabIndex = 15;
+            this.btndanhmuc.Text = "Danh Mục";
+            this.btndanhmuc.Click += new System.EventHandler(this.btndanhmuc_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -376,7 +403,7 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox btnclose;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button6;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button btnout;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
@@ -385,5 +412,6 @@
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2TextBox txtMaNV;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2Button btndanhmuc;
     }
 }

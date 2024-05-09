@@ -45,6 +45,6 @@ namespace BUS
         {
           return  HD_Dal.DTNgay(ngay);
         }
-
+        
     }
 }

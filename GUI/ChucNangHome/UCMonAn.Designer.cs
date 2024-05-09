@@ -131,7 +131,7 @@
             this.txtGia.BorderRadius = 17;
             this.txtGia.BorderThickness = 3;
             this.txtGia.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtGia.DefaultText = "";
+            this.txtGia.DefaultText = "0";
             this.txtGia.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtGia.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtGia.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -198,7 +198,7 @@
             this.txtTim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTim.Name = "txtTim";
             this.txtTim.PasswordChar = '\0';
-            this.txtTim.PlaceholderText = "";
+            this.txtTim.PlaceholderText = "Tên Món";
             this.txtTim.SelectedText = "";
             this.txtTim.Size = new System.Drawing.Size(158, 41);
             this.txtTim.TabIndex = 79;
@@ -256,7 +256,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgv1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv1.ColumnHeadersHeight = 4;
+            this.dgv1.ColumnHeadersHeight = 30;
             this.dgv1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -286,7 +286,7 @@
             this.dgv1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgv1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgv1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgv1.ThemeStyle.HeaderStyle.Height = 4;
+            this.dgv1.ThemeStyle.HeaderStyle.Height = 30;
             this.dgv1.ThemeStyle.ReadOnly = false;
             this.dgv1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;

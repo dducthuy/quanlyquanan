@@ -35,6 +35,12 @@ namespace DAL
      
            
         }
+        public int ckeckmonhoadon(int mahd,string mamon)
+        {
+            string sql = string.Format("SELECT COUNT(*) FROM ChiTietHoaDon WHERE MaHD = {0} AND MaMon = '{1}';", mahd,mamon);
+            string ko = "";
+           return DB.CheckID(ko, sql);
+        }
     }
     
 }

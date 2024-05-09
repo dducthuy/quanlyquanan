@@ -4,14 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL;
+using DTO;
 namespace BUS
 {
-    internal class ChitietHD_BUS
+    public class ChitietHD_BUS
     {
         ChiTietHD_DAL ct = new ChiTietHD_DAL();
         public void NhapCT(int MaHD, string MaMon, int soluong)
         {
              ct.NhapCT(MaHD,MaMon,soluong);
+        }
+        public int ckeckmonhoadon(int mahd, string mamon)
+        {
+            return ct.ckeckmonhoadon(mahd, mamon);
+        }
+        public List<ChiTietHoaDon> DschitietHD(int MaHD)
+        {
+            return ct.DschitietHD(MaHD);
+        }
+        public void nhapCT(int MaHD, string MaMon, int soluong)
+        {
+            ct.NhapCT(MaHD, MaMon, soluong);    
         }
     }
 }

@@ -58,6 +58,12 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChucNangHome\UCdanhmuc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChucNangHome\UCdanhmuc.Designer.cs">
+      <DependentUpon>UCdanhmuc.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChucNangHome\UCMonAn.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNangHome\UCdanhmuc.resx">
+      <DependentUpon>UCdanhmuc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNangHome\UCMonAn.resx">
       <DependentUpon>UCMonAn.cs</DependentUpon>
@@ -250,6 +259,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\back1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-log-out-30.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

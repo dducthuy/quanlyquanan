@@ -71,7 +71,10 @@ namespace BUS
                banDAL.Chuyenban(maban, mabandi);
            
             }
-
+            public List<Ban> loadBan()
+            {
+               return banDAL.loadBan();
+            }
         }
     }
 }

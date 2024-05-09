@@ -37,7 +37,6 @@
             this.Panel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnHome = new Guna.UI2.WinForms.Guna2Button();
-            this.btnluong = new Guna.UI2.WinForms.Guna2Button();
             this.btnTaiKhoan = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnNhanvien = new Guna.UI2.WinForms.Guna2Button();
@@ -116,7 +115,6 @@
             // guna2Panel1
             // 
             this.guna2Panel1.Controls.Add(this.btnHome);
-            this.guna2Panel1.Controls.Add(this.btnluong);
             this.guna2Panel1.Controls.Add(this.btnTaiKhoan);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.Controls.Add(this.btnNhanvien);
@@ -150,28 +148,6 @@
             this.btnHome.Size = new System.Drawing.Size(114, 67);
             this.btnHome.TabIndex = 15;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // btnluong
-            // 
-            this.btnluong.BackColor = System.Drawing.Color.Transparent;
-            this.btnluong.BorderColor = System.Drawing.Color.White;
-            this.btnluong.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-            this.btnluong.BorderThickness = 1;
-            this.btnluong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnluong.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnluong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnluong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnluong.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(166)))), ((int)(((byte)(243)))));
-            this.btnluong.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.btnluong.ForeColor = System.Drawing.Color.White;
-            this.btnluong.Image = global::GUI.Properties.Resources.icons8_money_30;
-            this.btnluong.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnluong.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnluong.Location = new System.Drawing.Point(0, 275);
-            this.btnluong.Name = "btnluong";
-            this.btnluong.Size = new System.Drawing.Size(188, 45);
-            this.btnluong.TabIndex = 10;
-            this.btnluong.Text = "Lương";
             // 
             // btnTaiKhoan
             // 
@@ -276,7 +252,6 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox btnclose;
         private Guna.UI2.WinForms.Guna2Panel Panel;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2Button btnluong;
         private Guna.UI2.WinForms.Guna2Button btnTaiKhoan;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Button btnNhanvien;

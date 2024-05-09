@@ -76,6 +76,7 @@ namespace GUI.ChucNangHome
                 {
                     Guna2TextBox textBox = (Guna2TextBox)control;
                     textBox.Text = "";
+                    txtGia.Text = "0";
                 }
                 else if (control is Guna2ComboBox)
                 {
@@ -111,9 +112,9 @@ namespace GUI.ChucNangHome
                 MessageBox.Show(ez.Message);
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                MessageBox.Show( ex.Message);
+                MessageBox.Show($"Error: {ex.Message}");    
             }
         }
 

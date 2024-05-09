@@ -14,7 +14,8 @@ namespace BUS
 
         public bool ThemMonAn(MonAn monAn)
         {
-            if (string.IsNullOrEmpty(monAn.TenMon) || monAn.Gia == null)
+            if (string.IsNullOrEmpty(monAn.TenMon) || monAn.Gia <= 0)
+
             {
                 throw new AggregateException("Thông tin không hợp lệ!");
             }

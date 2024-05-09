@@ -35,6 +35,7 @@
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.gb1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.date = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Separator5 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -59,7 +60,6 @@
             this.btnSua = new Guna.UI2.WinForms.Guna2Button();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.btnXoa = new Guna.UI2.WinForms.Guna2Button();
-            this.date = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.gb1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).BeginInit();
@@ -119,6 +119,21 @@
             this.gb1.Size = new System.Drawing.Size(248, 515);
             this.gb1.TabIndex = 151;
             this.gb1.Click += new System.EventHandler(this.gb1_Click);
+            // 
+            // date
+            // 
+            this.date.BorderRadius = 15;
+            this.date.Checked = true;
+            this.date.FillColor = System.Drawing.Color.White;
+            this.date.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.date.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.date.Location = new System.Drawing.Point(92, 430);
+            this.date.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.date.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(145, 36);
+            this.date.TabIndex = 154;
+            this.date.Value = new System.DateTime(2023, 10, 17, 9, 47, 18, 348);
             // 
             // guna2HtmlLabel7
             // 
@@ -387,7 +402,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgv1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv1.ColumnHeadersHeight = 4;
+            this.dgv1.ColumnHeadersHeight = 30;
             this.dgv1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -417,7 +432,7 @@
             this.dgv1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgv1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgv1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgv1.ThemeStyle.HeaderStyle.Height = 4;
+            this.dgv1.ThemeStyle.HeaderStyle.Height = 30;
             this.dgv1.ThemeStyle.ReadOnly = false;
             this.dgv1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -495,21 +510,6 @@
             this.btnXoa.TabIndex = 148;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
-            // date
-            // 
-            this.date.BorderRadius = 15;
-            this.date.Checked = true;
-            this.date.FillColor = System.Drawing.Color.White;
-            this.date.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.date.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.date.Location = new System.Drawing.Point(92, 430);
-            this.date.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.date.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(145, 36);
-            this.date.TabIndex = 154;
-            this.date.Value = new System.DateTime(2023, 10, 17, 9, 47, 18, 348);
             // 
             // UCQLnhanvien
             // 
