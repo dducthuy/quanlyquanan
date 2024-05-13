@@ -136,6 +136,10 @@ namespace BUS
             
             
         }
+        public DataTable Dsquyen()
+        {
+            return tk_dal.Dsquyen();
+        }
      
 
 

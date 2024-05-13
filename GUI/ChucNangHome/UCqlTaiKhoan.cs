@@ -14,6 +14,7 @@ using System.Web.UI.WebControls;
 using Guna.UI2.WinForms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
+
 namespace GUI.ChucNangHome
 {
     public partial class UCqlTaiKhoan : UserControl
@@ -23,20 +24,23 @@ namespace GUI.ChucNangHome
         public UCqlTaiKhoan()
         {
             InitializeComponent();
-            delay();
-
-
-        }
-        private async void delay()
-        {
-            await Delay_grv();
-        }
-        //hàm delay
-        public async Task Delay_grv()
-        { 
-            await Task.Delay(1000);// 1s
+      
             guna2DataGridView1.DataSource = TKbus.getData();
+            DSquyen(cbDM);
+
         }
+        //private async void delay()
+        //{
+        //    await Delay_grv();
+        //}
+        ////hàm delay
+        //public async Task Delay_grv()
+        //{ 
+        //    await Task.Delay(1000);// 1s
+        //    guna2DataGridView1.DataSource = TKbus.getData();
+           
+        //}
+        
 
         //Thêm 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -44,7 +48,7 @@ namespace GUI.ChucNangHome
             string tenDangNhap = txtTK.Text;
             string matKhau = txtMk.Text;
             string maTK = txtMaTK.Text;
-            string maQ = txtMaQ.Text;
+            string maQ = cbDM.Text;
 
             try
             {
@@ -67,7 +71,11 @@ namespace GUI.ChucNangHome
             
 
         }
-
+        public void DSquyen(Guna2ComboBox CB)
+        {
+            CB.DataSource = TKbus.Dsquyen();
+            CB.DisplayMember = "MaQ";
+        }
         private void guna2DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
            
@@ -78,7 +86,7 @@ namespace GUI.ChucNangHome
                 txtMaTK.Text = row.Cells[0].Value.ToString();
                 txtTK.Text = row.Cells[1].Value.ToString();
                 txtMk.Text = row.Cells[2].Value.ToString();
-                txtMaQ.Text = row.Cells[3].Value.ToString();
+                cbDM.Text = row.Cells[3].Value.ToString();
 
             }
 
@@ -90,7 +98,7 @@ namespace GUI.ChucNangHome
             string tenDangNhap = txtTK.Text;
             string matKhau = txtMk.Text;
             string maTK = txtMaTK.Text;
-            string maQ = txtMaQ.Text;
+            string maQ = cbDM.Text;
             try
             {
                 bool check = TKbus.Sua(maTK, tenDangNhap, matKhau, maQ);
@@ -142,7 +150,7 @@ namespace GUI.ChucNangHome
             string tenDangNhap = txtTK.Text;
             string matKhau = txtMk.Text;
             string maTK = txtMaTK.Text;
-            string maQ = txtMaQ.Text;
+            string maQ = cbDM.Text;
             DialogResult result = MessageBox.Show("Bạn có muốn xóa tài Khoản Không ", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             try
             {
@@ -163,6 +171,11 @@ namespace GUI.ChucNangHome
         }
 
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void cbDM_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

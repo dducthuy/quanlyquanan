@@ -14,6 +14,7 @@ using System.Collections;
 using System.Runtime.InteropServices.ComTypes;
 using System.Windows.Forms.Layout;
 using BUS.BUS;
+using GUI.report;
 
 //using System.Web.UI.WebControls;
 
@@ -27,6 +28,7 @@ namespace GUI.ChucNangHome
         MenuHD_DAL menuHD = new MenuHD_DAL();
         DataBase_DAL DB = new DataBase_DAL();
         Ban_BUS Ban = new Ban_BUS();
+        ChitietHD_BUS ct = new ChitietHD_BUS();
        
         public string MaNV { get; set; }
 
@@ -207,11 +209,17 @@ namespace GUI.ChucNangHome
         //thanh toan
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            
+         
             int mahd = HoaDon.layMaHD(mabn);
             if(mahd != -1)
             {
-                DialogResult result = MessageBox.Show("Thanh toan ", "Thông báo", MessageBoxButtons.YesNo,MessageBoxIcon.Stop);
+                DataTable dt = ct.layhd(mabn);
+                hoadon1 hd = new hoadon1();
+                hd.SetDataSource(dt);
+                rpthoadon rpthoadon = new rpthoadon();
+                rpthoadon.rptv1.ReportSource = hd;
+                rpthoadon.Show();
+                DialogResult result = MessageBox.Show("Bạn có muốn thanh toán không! ", "Thông báo", MessageBoxButtons.YesNo,MessageBoxIcon.Stop);
                 if (result == DialogResult.Yes)
                 {
                     HoaDon.checkout(mahd,mabn);

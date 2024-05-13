@@ -86,7 +86,15 @@ namespace DAL
                 return Tuple.Create(taiKhoan.MaQ, taiKhoan.MaTK); // Trả về một cặp giá trị (MaQ, MaTK)
             }
         }
-       
- 
+        public DataTable Dsquyen()
+        {
+            string sql = string.Format("select * from Quyen");
+            return DBConnect.getData(sql);
+
+          
+        }
+
+
+
     }
 }

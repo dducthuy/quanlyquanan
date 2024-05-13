@@ -123,6 +123,16 @@ namespace GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_create_order_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-create-order-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_graph_report_script_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-graph-report-script-30", resourceCulture);
@@ -166,6 +176,36 @@ namespace GUI.Properties {
         internal static System.Drawing.Bitmap icons8_name_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-name-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_order_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-order-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_order_34 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-order-34", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_order_341 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-order-341", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

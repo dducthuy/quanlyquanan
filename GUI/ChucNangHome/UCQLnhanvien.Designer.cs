@@ -32,7 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.gb1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.date = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -66,16 +65,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2HtmlLabel6
-            // 
-            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(166)))), ((int)(((byte)(243)))));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(3, 100);
-            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(92, 18);
-            this.guna2HtmlLabel6.TabIndex = 145;
-            this.guna2HtmlLabel6.Text = "Tên Nhân Viên";
-            // 
             // guna2HtmlLabel5
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
@@ -93,7 +82,6 @@
             this.gb1.Controls.Add(this.date);
             this.gb1.Controls.Add(this.guna2HtmlLabel7);
             this.gb1.Controls.Add(this.guna2Separator5);
-            this.gb1.Controls.Add(this.guna2HtmlLabel6);
             this.gb1.Controls.Add(this.guna2PictureBox2);
             this.gb1.Controls.Add(this.guna2HtmlLabel5);
             this.gb1.Controls.Add(this.txtTim);
@@ -182,7 +170,7 @@
             this.txtTim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTim.Name = "txtTim";
             this.txtTim.PasswordChar = '\0';
-            this.txtTim.PlaceholderText = "";
+            this.txtTim.PlaceholderText = "Tên Nhân Viên";
             this.txtTim.SelectedText = "";
             this.txtTim.Size = new System.Drawing.Size(158, 39);
             this.txtTim.TabIndex = 125;
@@ -415,6 +403,7 @@
             this.dgv1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv1.Location = new System.Drawing.Point(6, 23);
             this.dgv1.Name = "dgv1";
+            this.dgv1.ReadOnly = true;
             this.dgv1.RowHeadersVisible = false;
             this.dgv1.RowHeadersWidth = 51;
             this.dgv1.RowTemplate.Height = 24;
@@ -433,7 +422,7 @@
             this.dgv1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgv1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgv1.ThemeStyle.HeaderStyle.Height = 30;
-            this.dgv1.ThemeStyle.ReadOnly = false;
+            this.dgv1.ThemeStyle.ReadOnly = true;
             this.dgv1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgv1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -534,8 +523,6 @@
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2GroupBox gb1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;

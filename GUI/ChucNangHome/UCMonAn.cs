@@ -32,6 +32,8 @@ namespace GUI.ChucNangHome
 
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+         
+
 
         }
 
@@ -131,7 +133,8 @@ namespace GUI.ChucNangHome
              
             }
             txtId.Enabled = false;
-            dgv1.DataSource = monbusc.LayDuLieu();
+           
+
 
         }
 
@@ -168,6 +171,12 @@ namespace GUI.ChucNangHome
             List<DanhMuc> dsdm = dmDAL.Laydsdm();
             cbDM.DataSource = dsdm;
             cbDM.DisplayMember = "TenDM";
+            dgv1.DataSource = monbusc.LayDuLieu();
+            dgv1.Columns[0].HeaderText = "Mã";
+            dgv1.Columns[1].HeaderText = "Tên ";
+            dgv1.Columns[2].HeaderText = "Giá";
+            dgv1.Columns[3].HeaderText = "Danh Mục";
+            dgv1.Columns[4].HeaderText = "Lượt bán";
 
         }
         private void cbDM_SelectedIndexChanged(object sender, EventArgs e)

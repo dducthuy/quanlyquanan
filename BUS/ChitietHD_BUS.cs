@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +26,10 @@ namespace BUS
         public void nhapCT(int MaHD, string MaMon, int soluong)
         {
             ct.NhapCT(MaHD, MaMon, soluong);    
+        }
+        public DataTable layhd(int maban)
+        {
+            return ct.layhd(maban); 
         }
     }
 }

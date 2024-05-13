@@ -4,7 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO;
-    
+using GUI.report;
+
 
 namespace GUI
 {
@@ -18,8 +19,8 @@ namespace GUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-           //Application.Run(new DangNhap());
-          Application.Run(new Home());
+           Application.Run(new DangNhap());
+          //Application.Run(new Form1());
 
         }
     }

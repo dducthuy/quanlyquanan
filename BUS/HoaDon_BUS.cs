@@ -45,6 +45,10 @@ namespace BUS
         {
           return  HD_Dal.DTNgay(ngay);
         }
-        
+        public DataTable dtcacthang(int nam)
+        {
+           
+            return HD_Dal.dtcacthang(nam);
+        }
     }
 }

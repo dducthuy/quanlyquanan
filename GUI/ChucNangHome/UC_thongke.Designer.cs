@@ -32,6 +32,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.listban = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.dgv1 = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -50,13 +54,13 @@
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btndoanhthu = new Guna.UI2.WinForms.Guna2Button();
-            this.btnsanpham = new Guna.UI2.WinForms.Guna2Button();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.listban.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cnnam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Nam)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -71,9 +75,9 @@
             this.listban.BorderThickness = 3;
             this.listban.Controls.Add(this.dgv1);
             this.listban.CustomBorderColor = System.Drawing.Color.White;
-            this.listban.Location = new System.Drawing.Point(3, 14);
+            this.listban.Location = new System.Drawing.Point(3, 254);
             this.listban.Name = "listban";
-            this.listban.Size = new System.Drawing.Size(482, 408);
+            this.listban.Size = new System.Drawing.Size(482, 216);
             this.listban.TabIndex = 156;
             this.listban.Paint += new System.Windows.Forms.PaintEventHandler(this.listban_Paint);
             // 
@@ -101,12 +105,12 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv1.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv1.Location = new System.Drawing.Point(5, 3);
+            this.dgv1.Location = new System.Drawing.Point(3, 3);
             this.dgv1.Name = "dgv1";
             this.dgv1.RowHeadersVisible = false;
             this.dgv1.RowHeadersWidth = 51;
             this.dgv1.RowTemplate.Height = 24;
-            this.dgv1.Size = new System.Drawing.Size(473, 402);
+            this.dgv1.Size = new System.Drawing.Size(473, 210);
             this.dgv1.TabIndex = 150;
             this.dgv1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -129,6 +133,7 @@
             this.dgv1.ThemeStyle.RowsStyle.Height = 24;
             this.dgv1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv1_CellContentClick);
             // 
             // txttongtien
             // 
@@ -147,7 +152,7 @@
             this.txttongtien.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
             this.txttongtien.ForeColor = System.Drawing.Color.Red;
             this.txttongtien.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txttongtien.Location = new System.Drawing.Point(185, 431);
+            this.txttongtien.Location = new System.Drawing.Point(182, 478);
             this.txttongtien.Margin = new System.Windows.Forms.Padding(4);
             this.txttongtien.Name = "txttongtien";
             this.txttongtien.PasswordChar = '\0';
@@ -178,7 +183,7 @@
             this.excell.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(166)))), ((int)(((byte)(243)))));
             this.excell.Font = new System.Drawing.Font("Times New Roman", 9F);
             this.excell.ForeColor = System.Drawing.Color.White;
-            this.excell.Location = new System.Drawing.Point(382, 431);
+            this.excell.Location = new System.Drawing.Point(379, 478);
             this.excell.Name = "excell";
             this.excell.Size = new System.Drawing.Size(103, 33);
             this.excell.TabIndex = 160;
@@ -192,7 +197,7 @@
             this.cnnam.BorderThickness = 3;
             this.cnnam.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.cnnam.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.cnnam.Location = new System.Drawing.Point(501, 154);
+            this.cnnam.Location = new System.Drawing.Point(501, 201);
             this.cnnam.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cnnam.Maximum = new decimal(new int[] {
             10000,
@@ -200,7 +205,7 @@
             0,
             0});
             this.cnnam.Name = "cnnam";
-            this.cnnam.Size = new System.Drawing.Size(128, 37);
+            this.cnnam.Size = new System.Drawing.Size(152, 37);
             this.cnnam.TabIndex = 163;
             this.cnnam.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(166)))), ((int)(((byte)(243)))));
             this.cnnam.Value = new decimal(new int[] {
@@ -235,16 +240,16 @@
             "10",
             "11",
             "12"});
-            this.cbthang.Location = new System.Drawing.Point(635, 153);
+            this.cbthang.Location = new System.Drawing.Point(659, 202);
             this.cbthang.Name = "cbthang";
-            this.cbthang.Size = new System.Drawing.Size(100, 36);
+            this.cbthang.Size = new System.Drawing.Size(60, 36);
             this.cbthang.TabIndex = 164;
             this.cbthang.SelectedIndexChanged += new System.EventHandler(this.cbthang_SelectedIndexChanged);
             // 
             // guna2Separator1
             // 
             this.guna2Separator1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(166)))), ((int)(((byte)(243)))));
-            this.guna2Separator1.Location = new System.Drawing.Point(501, 195);
+            this.guna2Separator1.Location = new System.Drawing.Point(501, 239);
             this.guna2Separator1.Name = "guna2Separator1";
             this.guna2Separator1.Size = new System.Drawing.Size(234, 10);
             this.guna2Separator1.TabIndex = 165;
@@ -257,11 +262,11 @@
             this.Ngay.FillColor = System.Drawing.Color.White;
             this.Ngay.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Ngay.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.Ngay.Location = new System.Drawing.Point(501, 258);
+            this.Ngay.Location = new System.Drawing.Point(501, 347);
             this.Ngay.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.Ngay.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.Ngay.Name = "Ngay";
-            this.Ngay.Size = new System.Drawing.Size(234, 36);
+            this.Ngay.Size = new System.Drawing.Size(218, 36);
             this.Ngay.TabIndex = 166;
             this.Ngay.Value = new System.DateTime(2023, 10, 17, 9, 47, 18, 348);
             this.Ngay.ValueChanged += new System.EventHandler(this.Ngay_ValueChanged);
@@ -269,7 +274,7 @@
             // guna2Separator2
             // 
             this.guna2Separator2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(166)))), ((int)(((byte)(243)))));
-            this.guna2Separator2.Location = new System.Drawing.Point(501, 312);
+            this.guna2Separator2.Location = new System.Drawing.Point(501, 385);
             this.guna2Separator2.Name = "guna2Separator2";
             this.guna2Separator2.Size = new System.Drawing.Size(234, 10);
             this.guna2Separator2.TabIndex = 167;
@@ -277,7 +282,7 @@
             // guna2Separator3
             // 
             this.guna2Separator3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(166)))), ((int)(((byte)(243)))));
-            this.guna2Separator3.Location = new System.Drawing.Point(501, 412);
+            this.guna2Separator3.Location = new System.Drawing.Point(501, 312);
             this.guna2Separator3.Name = "guna2Separator3";
             this.guna2Separator3.Size = new System.Drawing.Size(234, 10);
             this.guna2Separator3.TabIndex = 168;
@@ -290,7 +295,7 @@
             this.Nam.BorderThickness = 3;
             this.Nam.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Nam.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Nam.Location = new System.Drawing.Point(501, 368);
+            this.Nam.Location = new System.Drawing.Point(501, 274);
             this.Nam.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Nam.Maximum = new decimal(new int[] {
             100000,
@@ -298,7 +303,7 @@
             0,
             0});
             this.Nam.Name = "Nam";
-            this.Nam.Size = new System.Drawing.Size(234, 37);
+            this.Nam.Size = new System.Drawing.Size(218, 37);
             this.Nam.TabIndex = 169;
             this.Nam.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(166)))), ((int)(((byte)(243)))));
             this.Nam.Value = new decimal(new int[] {
@@ -313,7 +318,7 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(166)))), ((int)(((byte)(243)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(501, 126);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(501, 178);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(94, 21);
             this.guna2HtmlLabel2.TabIndex = 170;
@@ -324,7 +329,7 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(166)))), ((int)(((byte)(243)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(501, 231);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(501, 324);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(86, 21);
             this.guna2HtmlLabel1.TabIndex = 171;
@@ -335,7 +340,7 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(166)))), ((int)(((byte)(243)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(501, 340);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(501, 251);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(83, 21);
             this.guna2HtmlLabel3.TabIndex = 172;
@@ -357,50 +362,35 @@
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(166)))), ((int)(((byte)(243)))));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(33, 431);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(30, 478);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(145, 33);
             this.guna2HtmlLabel4.TabIndex = 174;
             this.guna2HtmlLabel4.Text = "Doanh Thu:";
             // 
-            // btndoanhthu
+            // chart1
             // 
-            this.btndoanhthu.BorderRadius = 10;
-            this.btndoanhthu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btndoanhthu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btndoanhthu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btndoanhthu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btndoanhthu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(166)))), ((int)(((byte)(243)))));
-            this.btndoanhthu.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.btndoanhthu.ForeColor = System.Drawing.Color.White;
-            this.btndoanhthu.Location = new System.Drawing.Point(511, 69);
-            this.btndoanhthu.Name = "btndoanhthu";
-            this.btndoanhthu.Size = new System.Drawing.Size(94, 33);
-            this.btndoanhthu.TabIndex = 175;
-            this.btndoanhthu.Text = "Doanh Thu";
-            // 
-            // btnsanpham
-            // 
-            this.btnsanpham.BorderRadius = 10;
-            this.btnsanpham.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnsanpham.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnsanpham.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnsanpham.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnsanpham.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(166)))), ((int)(((byte)(243)))));
-            this.btnsanpham.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.btnsanpham.ForeColor = System.Drawing.Color.White;
-            this.btnsanpham.Location = new System.Drawing.Point(624, 69);
-            this.btnsanpham.Name = "btnsanpham";
-            this.btnsanpham.Size = new System.Drawing.Size(101, 33);
-            this.btnsanpham.TabIndex = 176;
-            this.btnsanpham.Text = "Sản phẩm";
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(3, 3);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Doanh Thu";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(482, 245);
+            this.chart1.TabIndex = 177;
+            this.chart1.Text = "chart1";
+            title1.Name = "Biểu đồ doanh Thu";
+            this.chart1.Titles.Add(title1);
             // 
             // UC_thongke
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.btnsanpham);
-            this.Controls.Add(this.btndoanhthu);
+            this.Controls.Add(this.chart1);
             this.Controls.Add(this.guna2HtmlLabel4);
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.guna2HtmlLabel3);
@@ -426,6 +416,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cnnam)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Nam)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -451,7 +442,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2DataGridView dgv1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2Button btnsanpham;
-        private Guna.UI2.WinForms.Guna2Button btndoanhthu;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }

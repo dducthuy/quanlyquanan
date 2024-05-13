@@ -17,21 +17,15 @@ namespace GUI.ChucNangHome
         public UCQLnhanvien()
         {
             InitializeComponent();
-            delay();
+          
+            dgv1.DataSource = NVbus.GetData();
         }
         NhanVien_BUS NVbus = new NhanVien_BUS();
         NhanVien NV = new NhanVien();
 
-        private async void delay()
-        {
-            await Delay_grv();
-        }
-        //hàm delay
-        public async Task Delay_grv()
-        {
-            await Task.Delay(1000);// 1s
-            dgv1.DataSource = NVbus.GetData();
-        }
+       
+      
+    
        
         private void btnNew_Click(object sender, EventArgs e)
         {

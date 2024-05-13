@@ -41,6 +41,11 @@ namespace DAL
             string ko = "";
            return DB.CheckID(ko, sql);
         }
+        public DataTable layhd(int maban)
+        {
+            string sql = string.Format("EXEC layhd {0}",maban);
+            return DB.getData(sql);
+        }
     }
     
 }

@@ -58,13 +58,18 @@ namespace DAL
 
         public DataTable DTThangnam(int ngay, int nam)
         {
-            string sql = string.Format("exec [dbo].[Hoadonthangnam] {0},{1}", ngay,nam);
+            string sql = string.Format("EXEC [dbo].[ThongKeSoDonHangVaDoanhThuTheoNgay] {0},{1}", ngay,nam);
            return DB.getData(sql);
         }
         public DataTable DTNgay(string ngay)
         {
             string sql = string.Format("EXEC HoadonNgay '{0}'", ngay);
           return  DB.getData(sql);
+        }
+        public DataTable dtcacthang(int nam)
+        {
+            string sql = string.Format("EXEC [dbo].[ThongKeSoDonHangVaDoanhThuTheoNam] {0}", nam);
+            return DB.getData(sql);
         }
     }
 }
