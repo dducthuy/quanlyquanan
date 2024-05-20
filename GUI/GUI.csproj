@@ -128,10 +128,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet_hd.xsd</DependentUpon>
     </Compile>
+    <Compile Include="report\doanhthunam.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>doanhthunam.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="report\hoadon1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>hoadon1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\ngay2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ngay2.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="report\rpthoadon.cs">
@@ -139,6 +151,12 @@
     </Compile>
     <Compile Include="report\rpthoadon.Designer.cs">
       <DependentUpon>rpthoadon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report\thongkethang.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>thongkethang.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
@@ -180,12 +198,24 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="report\doanhthunam.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>doanhthunam.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="report\hoadon1.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>hoadon1.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="report\ngay2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ngay2.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="report\rpthoadon.resx">
       <DependentUpon>rpthoadon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report\thongkethang.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>thongkethang.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

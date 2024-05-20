@@ -190,12 +190,26 @@ namespace GUI.ChucNangHome
                 }
                 else
                 {
-                    DialogResult result = MessageBox.Show("Món này đã có trong hóa đơn. Bạn có muốn tiếp tục thêm?", "Thông báo", MessageBoxButtons.YesNo);
-                    if (result == DialogResult.Yes)
+                    if (soluong < 1)
                     {
-                        cthd.nhapCT(mahd, mamon, soluong);
-                        Show(mabn); 
+                        DialogResult result = MessageBox.Show(" Bạn có muốn giảm sô lượng không?", "Thông báo", MessageBoxButtons.YesNo);
+                        if (result == DialogResult.Yes)
+                        {
+                            cthd.nhapCT(mahd, mamon, soluong);
+                            Show(mabn);
+                        }
                     }
+                    else
+                    {
+                        DialogResult result = MessageBox.Show(" Bạn có muốn tiếp tục thêm?", "Thông báo", MessageBoxButtons.YesNo);
+                        if (result == DialogResult.Yes)
+                        {
+                            cthd.nhapCT(mahd, mamon, soluong);
+                            Show(mabn);
+                        }
+                    }
+                      
+                   
                 }
             }
             DSban.Controls.Clear();
@@ -254,6 +268,11 @@ namespace GUI.ChucNangHome
         }
 
         private void txtmon_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txttongtien_TextChanged(object sender, EventArgs e)
         {
 
         }

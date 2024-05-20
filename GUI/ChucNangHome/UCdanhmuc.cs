@@ -1,4 +1,6 @@
 ﻿using BUS;
+using BUS.BUS;
+using DTO;
 using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
@@ -15,6 +17,7 @@ namespace GUI.ChucNangHome
     public partial class UCdanhmuc : UserControl
     {
         DanhMuc_BUS dn = new DanhMuc_BUS(); 
+        DanhMuc DanhMuc = new DanhMuc();
         public UCdanhmuc()
         {
             InitializeComponent();
@@ -65,6 +68,70 @@ namespace GUI.ChucNangHome
               
 
             }
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+          DanhMuc.MaDM =txtId.Text;
+            DanhMuc.TenDM=txtten.Text;
+            try
+            {
+            dn.ThemDanhMuc(DanhMuc);
+
+            }
+            catch(AggregateException ez) {
+                MessageBox.Show(ez.Message);
+            
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            dgv1.DataSource = dn.GetData();
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            DanhMuc.MaDM = txtId.Text;
+            DanhMuc.TenDM = txtten.Text;
+            
+            try
+            {
+                dn.Sua(DanhMuc);
+
+            }
+            catch (AggregateException ez)
+            {
+                MessageBox.Show(ez.Message);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            dgv1.DataSource = dn.GetData();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            DanhMuc.MaDM= txtId.Text;
+
+            try
+            {
+                DialogResult result = MessageBox.Show("Bạn có muốn xóa Bàn không  ", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                   dn.Xoa(DanhMuc);
+
+                }
+
+
+            }
+            catch (AggregateException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            dgv1.DataSource = dn.GetData();
         }
     }
 }

@@ -215,6 +215,7 @@
             this.txttongtien.Size = new System.Drawing.Size(172, 39);
             this.txttongtien.TabIndex = 156;
             this.txttongtien.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txttongtien.TextChanged += new System.EventHandler(this.txttongtien_TextChanged);
             // 
             // guna2Button1
             // 

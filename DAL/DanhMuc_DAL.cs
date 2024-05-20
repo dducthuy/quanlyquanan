@@ -44,7 +44,7 @@ namespace DAL
         public bool Xoa(object obj)
         {
             DanhMuc dm = (DanhMuc)obj;
-            string queryDelete = string.Format("DELETE FROM DanhMucMon WHERE MaDM = {0}", dm.MaDM);
+            string queryDelete = string.Format("delete from DanhMucMon Where MaDM = '{0}'", dm.MaDM);
             DBConnect.thucthisql(queryDelete);
             return true;
         }

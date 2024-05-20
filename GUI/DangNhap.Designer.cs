@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DangNhap));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.txtMK = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtTK = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
@@ -68,21 +67,6 @@
             this.guna2BorderlessForm1.ContainerControl = this;
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.White;
-            this.guna2Button1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(166)))), ((int)(((byte)(243)))));
-            this.guna2Button1.Location = new System.Drawing.Point(49, 552);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(143, 24);
-            this.guna2Button1.TabIndex = 18;
-            this.guna2Button1.Text = "Quyên mật khẩu";
             // 
             // txtMK
             // 
@@ -172,7 +156,6 @@
             this.guna2ContainerControl1.Controls.Add(this.btnMax);
             this.guna2ContainerControl1.Controls.Add(this.btnclose);
             this.guna2ContainerControl1.Controls.Add(this.guna2PictureBox1);
-            this.guna2ContainerControl1.Controls.Add(this.guna2Button1);
             this.guna2ContainerControl1.Controls.Add(this.guna2CirclePictureBox3);
             this.guna2ContainerControl1.Controls.Add(this.guna2CirclePictureBox2);
             this.guna2ContainerControl1.Controls.Add(this.guna2PictureBox3);
@@ -364,7 +347,6 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2ContainerControl guna2ContainerControl1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;

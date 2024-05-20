@@ -9,7 +9,9 @@ using DTO;
 namespace BUS
 {
     public class DanhMuc_BUS
+
     {
+
         DanhMuc_DAL danhMucDAL =new DanhMuc_DAL();
         public bool ThemDanhMuc(DanhMuc danhMuc)
         {
