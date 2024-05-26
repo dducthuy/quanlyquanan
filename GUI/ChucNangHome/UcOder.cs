@@ -290,31 +290,44 @@ namespace GUI.ChucNangHome
 
         private void txtChuyen_Click(object sender, EventArgs e)
         {
+            string trangthai = (cb.SelectedItem as Ban).TrangThai;
+            int mabanchuyen = (cb.SelectedItem as Ban).MaBan;
             if (string.IsNullOrEmpty(txtban.Text))
             {
-                MessageBox.Show("Bàn không có đẻ truyển");
+                MessageBox.Show("Bàn không có để truyển");
 
             }
             else
             {
-                
-            int mabanchuyen = (cb.SelectedItem as Ban).MaBan;
                 if(mabanchuyen == mabn)
                 {
                     MessageBox.Show("Không thể chuyển");
+                    return;
+
+                }
+                if (trangthai != "Trống")
+                {
+                    DialogResult result = MessageBox.Show("ban có muôn gộp bàn không ", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Stop);
+                    if (result == DialogResult.Yes)
+                    {
+                        Ban.chuyenban(mabn, mabanchuyen);
+                        DSban.Controls.Clear();
+                        ThemBan();
+                        Show(mabanchuyen);
+                    }
+
 
                 }
                 else
                 {
-
-            DialogResult result = MessageBox.Show("ban có muôn chuyển bàn không ", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Stop);
-            if (result == DialogResult.Yes)
-            {
-                Ban.chuyenban(mabn,mabanchuyen);
-            }
-            DSban.Controls.Clear();
-            ThemBan();
-            Show(mabanchuyen);
+                    DialogResult result = MessageBox.Show("bạn có muốn chuyền bàn hay không ", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Stop);
+                    if (result == DialogResult.Yes)
+                    {
+                        Ban.chuyenban(mabn, mabanchuyen);
+                        DSban.Controls.Clear();
+                        ThemBan();
+                        Show(mabanchuyen);
+                    }
                 }
 
 

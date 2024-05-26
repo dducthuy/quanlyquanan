@@ -70,6 +70,10 @@ namespace BUS
         {
            return danhMucDAL.Checkid(teban);
         }
+        public DataTable locmon(string MaDM)
+        {
+            return danhMucDAL.locmon(MaDM);
+        }
 
     }
 }

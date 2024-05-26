@@ -3,27 +3,11 @@
   "WorkspaceRootPath": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|d:\\workspace\\workspace\\th_web\\d_a\\do_an_1\\ql_quan_an\\gui\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|solutionrelative:gui\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B61A533B-4698-4998-8B27-EE117FB3A828}|BUS\\BUS.csproj|D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\bus\\mon_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B61A533B-4698-4998-8B27-EE117FB3A828}|BUS\\BUS.csproj|solutionrelative:bus\\mon_bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|d:\\workspace\\workspace\\th_web\\d_a\\do_an_1\\ql_quan_an\\gui\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|solutionrelative:gui\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\gui\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|solutionrelative:gui\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\gui\\chucnanghome\\ucmonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|d:\\workspace\\workspace\\th_web\\d_a\\do_an_1\\ql_quan_an\\gui\\chucnanghome\\ucmonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|solutionrelative:gui\\chucnanghome\\ucmonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\gui\\chucnanghome\\ucmonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|d:\\workspace\\workspace\\th_web\\d_a\\do_an_1\\ql_quan_an\\gui\\chucnanghome\\ucmonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|solutionrelative:gui\\chucnanghome\\ucmonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,79 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DangNhap.cs [Design]",
-              "DocumentMoniker": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\DangNhap.cs",
-              "RelativeDocumentMoniker": "GUI\\DangNhap.cs",
-              "ToolTip": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\DangNhap.cs [Design]",
-              "RelativeToolTip": "GUI\\DangNhap.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T18:45:58.921Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DangNhap.cs",
-              "DocumentMoniker": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\DangNhap.cs",
-              "RelativeDocumentMoniker": "GUI\\DangNhap.cs",
-              "ToolTip": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\DangNhap.cs",
-              "RelativeToolTip": "GUI\\DangNhap.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAcwFQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T18:40:13.127Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Home.cs [Design]",
-              "DocumentMoniker": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\Home.cs",
-              "RelativeDocumentMoniker": "GUI\\Home.cs",
-              "ToolTip": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\Home.cs [Design]*",
-              "RelativeToolTip": "GUI\\Home.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T18:39:36.646Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "UCMonAn.cs",
               "DocumentMoniker": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\ChucNangHome\\UCMonAn.cs",
               "RelativeDocumentMoniker": "GUI\\ChucNangHome\\UCMonAn.cs",
               "ToolTip": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\ChucNangHome\\UCMonAn.cs",
               "RelativeToolTip": "GUI\\ChucNangHome\\UCMonAn.cs",
-              "ViewState": "AQIAALAAAAAAAAAAAAAQwL4AAAANAAAA",
+              "ViewState": "AQIAAL4AAAAAAAAAAAAWwNMAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T18:28:27.816Z"
+              "WhenOpened": "2024-05-26T11:26:33.634Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "UCMonAn.cs [Design]",
               "DocumentMoniker": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\ChucNangHome\\UCMonAn.cs",
               "RelativeDocumentMoniker": "GUI\\ChucNangHome\\UCMonAn.cs",
               "ToolTip": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\ChucNangHome\\UCMonAn.cs [Design]",
               "RelativeToolTip": "GUI\\ChucNangHome\\UCMonAn.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T18:28:18.848Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Mon_BUS.cs",
-              "DocumentMoniker": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\BUS\\Mon_BUS.cs",
-              "RelativeDocumentMoniker": "BUS\\Mon_BUS.cs",
-              "ToolTip": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\BUS\\Mon_BUS.cs",
-              "RelativeToolTip": "BUS\\Mon_BUS.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAAADcAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T18:28:16.763Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-26T11:26:29.826Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

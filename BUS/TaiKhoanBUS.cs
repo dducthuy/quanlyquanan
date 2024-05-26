@@ -57,14 +57,9 @@ namespace BUS
                 string MaQ = tupleResult.Item1;
                 string MaTK = tupleResult.Item2;
 
-                if (MaQ == "admin")
-                {
-                    return Tuple.Create("Đăng nhập thành công!: Quyền:"+MaQ,MaTK);
-                }
-                else
-                {
-                    return Tuple.Create("Đăng nhập thành công!: Quyền: User"+MaQ,MaTK);
-                }
+                
+                    return Tuple.Create(MaQ,MaTK);
+               
             }
             else
             {

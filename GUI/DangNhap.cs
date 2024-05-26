@@ -38,10 +38,11 @@ namespace GUI
                 TaiKhoanBUS taiKhoanBUS = new TaiKhoanBUS();
                 var check = taiKhoanBUS.checkLogin(TenDangNhap, MatKhau);
                 string matk = check.Item2;
+                string quyen = check.Item1; 
                
-                MessageBox.Show(check.Item1,"Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Đăng Nhập Thành Công Quyền: "+quyen,"Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
-                Home home = new Home(matk);
+                Home home = new Home(matk,quyen);
                 home.ShowDialog();
 
             }

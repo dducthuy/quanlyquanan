@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -41,7 +41,6 @@
             this.txtGia = new Guna.UI2.WinForms.Guna2TextBox();
             this.cbDM = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Separator4 = new Guna.UI2.WinForms.Guna2Separator();
-            this.txtTim = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtTen = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnTim = new Guna.UI2.WinForms.Guna2Button();
             this.dgv1 = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -57,12 +56,11 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnNew = new Guna.UI2.WinForms.Guna2Button();
             this.gb1 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.cbtim = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.gb1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -181,30 +179,6 @@
             this.guna2Separator4.Size = new System.Drawing.Size(234, 10);
             this.guna2Separator4.TabIndex = 80;
             // 
-            // txtTim
-            // 
-            this.txtTim.AutoRoundedCorners = true;
-            this.txtTim.BorderColor = System.Drawing.Color.Black;
-            this.txtTim.BorderRadius = 19;
-            this.txtTim.BorderThickness = 3;
-            this.txtTim.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTim.DefaultText = "";
-            this.txtTim.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTim.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTim.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTim.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTim.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTim.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTim.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTim.Location = new System.Drawing.Point(-1, 71);
-            this.txtTim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtTim.Name = "txtTim";
-            this.txtTim.PasswordChar = '\0';
-            this.txtTim.PlaceholderText = "Tên Món";
-            this.txtTim.SelectedText = "";
-            this.txtTim.Size = new System.Drawing.Size(158, 41);
-            this.txtTim.TabIndex = 79;
-            // 
             // txtTen
             // 
             this.txtTen.BorderColor = System.Drawing.Color.White;
@@ -247,26 +221,26 @@
             // 
             // dgv1
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgv1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dgv1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgv1.ColumnHeadersHeight = 30;
             this.dgv1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv1.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgv1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv1.Location = new System.Drawing.Point(3, 11);
             this.dgv1.Name = "dgv1";
@@ -446,7 +420,7 @@
             // gb1
             // 
             this.gb1.BorderColor = System.Drawing.Color.White;
-            this.gb1.Controls.Add(this.txtTim);
+            this.gb1.Controls.Add(this.cbtim);
             this.gb1.Controls.Add(this.guna2Separator1);
             this.gb1.Controls.Add(this.guna2Separator2);
             this.gb1.Controls.Add(this.guna2Separator3);
@@ -471,9 +445,24 @@
             this.gb1.Size = new System.Drawing.Size(248, 515);
             this.gb1.TabIndex = 152;
             // 
-            // errorProvider
+            // cbtim
             // 
-            this.errorProvider.ContainerControl = this;
+            this.cbtim.BackColor = System.Drawing.Color.Transparent;
+            this.cbtim.BorderColor = System.Drawing.Color.Black;
+            this.cbtim.BorderRadius = 15;
+            this.cbtim.BorderThickness = 3;
+            this.cbtim.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbtim.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbtim.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbtim.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbtim.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbtim.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbtim.ItemHeight = 30;
+            this.cbtim.Location = new System.Drawing.Point(4, 74);
+            this.cbtim.Name = "cbtim";
+            this.cbtim.Size = new System.Drawing.Size(154, 36);
+            this.cbtim.TabIndex = 153;
+            this.cbtim.SelectedIndexChanged += new System.EventHandler(this.cbtim_SelectedIndexChanged_1);
             // 
             // UCMonAn
             // 
@@ -494,7 +483,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.gb1.ResumeLayout(false);
             this.gb1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -511,7 +499,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtGia;
         private Guna.UI2.WinForms.Guna2ComboBox cbDM;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator4;
-        private Guna.UI2.WinForms.Guna2TextBox txtTim;
         private Guna.UI2.WinForms.Guna2TextBox txtTen;
         private Guna.UI2.WinForms.Guna2Button btnTim;
         private Guna.UI2.WinForms.Guna2DataGridView dgv1;
@@ -526,6 +513,6 @@
         private Guna.UI2.WinForms.Guna2Button tbnThem;
         private Guna.UI2.WinForms.Guna2Button btnNew;
         private Guna.UI2.WinForms.Guna2GroupBox gb1;
-        private System.Windows.Forms.ErrorProvider errorProvider;
+        private Guna.UI2.WinForms.Guna2ComboBox cbtim;
     }
 }

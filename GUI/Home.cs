@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO;
 using BUS;
+using BUS.BUS;
 
 namespace GUI
 {
@@ -19,6 +20,7 @@ namespace GUI
        
         TaiKhoanBUS TKbus= new TaiKhoanBUS();
         NhanVien_BUS N = new NhanVien_BUS();    
+        Ban_BUS Ban = new Ban_BUS();
         public Home()
         {
             InitializeComponent();
@@ -26,13 +28,22 @@ namespace GUI
 
         public string MaTK {  get; set; }
         public string MaNV {  get; set; }   
-        public Home(string MaTK)
+        public string quyen { get; set; }
+        public Home(string MaTK, string quyen)
         {
             InitializeComponent();
             this.MaTK = MaTK;
             this.MaNV = layMaNV(MaTK);
-            txtMaNV.Text = this.MaNV;
-     
+            txtMaNV.Text = this.MaTK;
+            this.quyen = quyen;
+            if(quyen == "admin")
+            {
+                guna2Button7.Visible = true;
+            }
+            else
+            {
+                guna2Button7.Visible=false  ;
+            }
         }
 
         string layMaNV(string maTK)
@@ -95,12 +106,18 @@ namespace GUI
 
         private void btnclose_Click_1(object sender, EventArgs e)
         {
+            int checkban = Ban.ckeckbanthoat();
+            if(checkban != 0)
+            {
+                MessageBox.Show("còn bàn  chưa thanh toán ", "Cảnh Báo", MessageBoxButtons.OK);
+                return;
+            }
             DialogResult d = MessageBox.Show("Bạn có Muốn Thoát chương Trình Không", "Thông Báo", MessageBoxButtons.YesNo);
             if (d == DialogResult.Yes)
             {
                 Application.Exit();
             }
- 
+            
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)

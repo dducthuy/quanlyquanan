@@ -18,11 +18,13 @@ namespace GUI.ChucNangHome
     {
         MonAn_BUS monbusc = new MonAn_BUS();
         MonAn ma = new MonAn(); 
+        DanhMuc_BUS dm = new DanhMuc_BUS(); 
         public UCMonAn()
         {
             InitializeComponent();
             dgv1.DataSource = monbusc.LayDuLieu();
             loaddanhmuc();
+          
         }
 
         private void UCMonAn_Load(object sender, EventArgs e)
@@ -170,8 +172,8 @@ namespace GUI.ChucNangHome
 
         private void btnTim_Click(object sender, EventArgs e)
         {
-            string key =txtTim.Text;
-           dgv1.DataSource = monbusc.TimKiem(key);
+            string maDm = (cbtim.SelectedItem as DanhMuc).MaDM;
+           dgv1.DataSource = dm.locmon(maDm);
 
 
         }
@@ -206,6 +208,8 @@ namespace GUI.ChucNangHome
             List<DanhMuc> dsdm = dmDAL.Laydsdm();
             cbDM.DataSource = dsdm;
             cbDM.DisplayMember = "TenDM";
+            cbtim.DataSource = dsdm;
+            cbtim.DisplayMember = "TenDM";
             dgv1.DataSource = monbusc.LayDuLieu();
             dgv1.Columns[0].HeaderText = "Mã";
             dgv1.Columns[1].HeaderText = "Tên ";
@@ -217,6 +221,22 @@ namespace GUI.ChucNangHome
         private void cbDM_SelectedIndexChanged(object sender, EventArgs e)
         {
          
+        }
+ 
+
+        private void cbtim_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTim_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbtim_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

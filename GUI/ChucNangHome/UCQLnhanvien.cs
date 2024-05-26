@@ -132,7 +132,7 @@ namespace GUI.ChucNangHome
             }
             catch(Exception ex)
             {
-                MessageBox.Show("Không Thể xóa còn dữ Liệu liên quan");
+                MessageBox.Show("Lỗi"+ex.Message);
 
             }
         }

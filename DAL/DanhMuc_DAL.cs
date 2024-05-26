@@ -70,6 +70,12 @@ namespace DAL
             string sql = "SELECT COUNT(*) FROM DanhMucMon WHERE MaDM = '" + teban.Trim() + "'";
             return DBConnect.CheckID(teban, sql);
         }
+        public DataTable locmon(string MaDM)
+        {
+            string sql =string.Format( "SELECT * FROM MonAn where MaDM='{0}'",MaDM);
+            return DBConnect.getData(sql);
+        }
+
 
     }
 }

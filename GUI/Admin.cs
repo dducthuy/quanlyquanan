@@ -1,4 +1,6 @@
-﻿using GUI.ChucNangHome;
+﻿using BUS.BUS;
+using DTO;
+using GUI.ChucNangHome;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +15,7 @@ namespace GUI
 {
     public partial class Admin : Form
     {
+        Ban_BUS Ban = new Ban_BUS();
         public Admin()
         {
             InitializeComponent();
@@ -71,6 +74,12 @@ namespace GUI
         private void btnclose_Click(object sender, EventArgs e)
         {
             DialogResult d = MessageBox.Show("Bạn có Muốn Thoát chương Trình Không", "Thông Báo", MessageBoxButtons.YesNo);
+            int checkban = Ban.ckeckbanthoat();
+            if (checkban != 0)
+            {
+                MessageBox.Show("còn bàn  chưa thanh toán ", "Cảnh Báo", MessageBoxButtons.OK);
+                return;
+            }
             if (d == DialogResult.Yes)
             {
                 Application.Exit();

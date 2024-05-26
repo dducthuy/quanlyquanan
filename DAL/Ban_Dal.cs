@@ -79,6 +79,12 @@ namespace DAL
             DBConnect.thucthisql(sql);
           //  return true;
         }  
+        public int ckeckbanthoat()
+        {
+            string ma =null;
+            string sql = string.Format("select COUNT(MaBan) from BanAn  where TrangThai =' '");
+            return DBConnect.CheckID(ma,sql);
+        }
      
     }
 }

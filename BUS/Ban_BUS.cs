@@ -12,7 +12,7 @@ namespace BUS
     {
         public class Ban_BUS
         {
-            Ban_DAL banDAL = new Ban_DAL();
+               Ban_DAL banDAL = new Ban_DAL();
 
             public bool ThemBan(Ban ban)
             {
@@ -69,6 +69,10 @@ namespace BUS
             public List<Ban> loadBan()
             {
                return banDAL.loadBan();
+            }
+            public int ckeckbanthoat()
+            {
+                return banDAL.ckeckbanthoat();
             }
         }
     }
