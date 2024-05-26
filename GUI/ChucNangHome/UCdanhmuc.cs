@@ -83,10 +83,7 @@ namespace GUI.ChucNangHome
                 MessageBox.Show(ez.Message);
             
             }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+        
             dgv1.DataSource = dn.GetData();
         }
 
@@ -105,10 +102,7 @@ namespace GUI.ChucNangHome
                 MessageBox.Show(ez.Message);
 
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+         
             dgv1.DataSource = dn.GetData();
         }
 
@@ -118,7 +112,7 @@ namespace GUI.ChucNangHome
 
             try
             {
-                DialogResult result = MessageBox.Show("Bạn có muốn xóa Bàn không  ", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult result = MessageBox.Show("Bạn có muốn xóa  không  ", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
                 {
                    dn.Xoa(DanhMuc);
@@ -131,7 +125,17 @@ namespace GUI.ChucNangHome
             {
                 MessageBox.Show(ex.Message);
             }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Không thể xóa");
+
+            }
             dgv1.DataSource = dn.GetData();
+        }
+
+        private void dgv1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

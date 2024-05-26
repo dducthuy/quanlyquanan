@@ -45,7 +45,9 @@ namespace GUI.ChucNangHome
             }
             txtMaNV.Enabled = true;
             txtMaTK.Enabled = true;
-            
+            dgv1.DataSource = NVbus.GetData();
+
+
         }
 
         private void gb1_Click(object sender, EventArgs e)
@@ -101,12 +103,17 @@ namespace GUI.ChucNangHome
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            NV.MaNV = txtMaNV.Text;
+            NV.MaNV = txtMaNV.Text; 
             NV.HoTen = txtTen.Text;
             NV.SDT = txtSDT.Text;
           
                 
             NV.MaTK = txtMaTK.Text;
+            if(txtMaTK.Text == "Admin")
+            {
+                MessageBox.Show("Không thế xóa Admin");
+                return;
+            }
             DialogResult result = MessageBox.Show("Bạn có muốn xóa Nhân viên Không ", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             try
             {
@@ -123,12 +130,18 @@ namespace GUI.ChucNangHome
             {
                 MessageBox.Show(ez.Message);
             }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Không Thể xóa còn dữ Liệu liên quan");
+
+            }
         }
 
         private void btnTim_Click(object sender, EventArgs e)
         {
-            string key = txtTim.Text;   
-            NVbus.tim(key);
+            string key = txtTim.Text;
+            dgv1.DataSource = NVbus.tim(key);
+
         }
 
         private void dtpNS_ValueChanged(object sender, EventArgs e)

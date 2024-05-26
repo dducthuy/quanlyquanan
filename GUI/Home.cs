@@ -95,8 +95,12 @@ namespace GUI
 
         private void btnclose_Click_1(object sender, EventArgs e)
         {
-
-            Application.Exit();
+            DialogResult d = MessageBox.Show("Bạn có Muốn Thoát chương Trình Không", "Thông Báo", MessageBoxButtons.YesNo);
+            if (d == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+ 
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)

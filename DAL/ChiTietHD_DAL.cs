@@ -6,6 +6,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using DTO;
+using Microsoft.SqlServer.Server;
 namespace DAL
 {
 
@@ -44,6 +45,11 @@ namespace DAL
         public DataTable layhd(int maban)
         {
             string sql = string.Format("EXEC layhd {0}",maban);
+            return DB.getData(sql);
+        }
+        public DataTable layhdtk(int mahd) 
+        {
+            string sql = string.Format("exec layhd_tk {0}",mahd);
             return DB.getData(sql);
         }
     }

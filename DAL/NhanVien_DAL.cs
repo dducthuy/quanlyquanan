@@ -46,7 +46,7 @@ namespace DAL
 
             public DataTable TimKiem(string Key)
             {
-                string querySelect = "SELECT * FROM NhanVien WHERE HoTen LIKE '%" + Key.Trim() + "%'";
+                string querySelect = "SELECT * FROM NhanVien WHERE HoTen LIKE N'%" + Key.Trim() + "%'";
                 return DBConnect.getData(querySelect);
             }
 

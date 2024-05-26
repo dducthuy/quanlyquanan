@@ -41,13 +41,13 @@ namespace DAL
 
         public DataTable TimKiem(string Key)
         {
-            string querySelect = "SELECT * FROM MonAn WHERE TenMon LIKE '%" + Key.Trim() + "%'";
+            string querySelect = "SELECT * FROM MonAn WHERE TenMon LIKE N'%" + Key.Trim() + "%'";
             return DBConnect.getData(querySelect);
         }
 
         public DataTable getData()
         {
-            string sql = "SELECT * FROM MonAn";
+            string sql = "select \r\nma.MaMon,\r\nma.TenMon,\r\nma.Gia,\r\ndm.TenDM,\r\nma.Cell\r\n\r\nfrom MonAn as ma  inner join DanhMucMon as dm on ma.MaDM = dm.MaDM order by cell desc;";
             return DBConnect.getData(sql);
         }
 

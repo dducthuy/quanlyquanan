@@ -40,7 +40,7 @@ namespace GUI.ChucNangHome
 
             }
             catch(AggregateException ex) { MessageBox.Show(ex.Message); }
-           // catch(Exception er) {  MessageBox.Show(er.Message); }
+           
 
         }
 
@@ -75,53 +75,71 @@ namespace GUI.ChucNangHome
                     Guna2ComboBox comboBox = (Guna2ComboBox)control;
                     comboBox.SelectedIndex = -1;
                 }
-             
+                txtId.Enabled = true;
                 dgv1.DataSource = BanBUS.GetData();
             }
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            B.MaBan = int.Parse(txtId.Text);
-
-            B.Tenban = txtten.Text;
             try
             {
+                int maBan;
+                if (!int.TryParse(txtId.Text, out maBan))
+                {
+                    MessageBox.Show("Không Thể sửa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    return;
+                }
+
+                B.MaBan = maBan;
+                B.Tenban = txtten.Text;
+
                 bool check = BanBUS.Sua(B);
                 if (check)
                 {
-                    MessageBox.Show("sửa thành công");
+                    MessageBox.Show("Sửa thành công");
                     dgv1.DataSource = BanBUS.GetData();
-
                 }
             }
-            catch(AggregateException ex)
+         
+            catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Có lỗi xảy ra: " + ex.Message);
             }
         }
+
+        // xoa
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            B.MaBan = int.Parse(txtId.Text);
-
             try
             {
-                DialogResult result = MessageBox.Show("Bạn có muốn xóa Bàn không Không ", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if(result == DialogResult.Yes)
+                int maBan;
+                if (!int.TryParse(txtId.Text, out maBan))
                 {
-                    MessageBox.Show(BanBUS.Xoa(B));
-                    dgv1.DataSource = BanBUS.GetData();
-
+                    MessageBox.Show("Không Thể xóa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
 
+                B.MaBan = maBan;
 
+                DialogResult result = MessageBox.Show("Bạn có muốn xóa Bàn Không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    string message = BanBUS.Xoa(B);
+                    MessageBox.Show(message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    dgv1.DataSource = BanBUS.GetData();
+                }
             }
-            catch (AggregateException ex)
+
+            catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                string customMessage = "Bàn còn giữ liệu liên quan. Không thể xóa.";
+                MessageBox.Show(customMessage, "Không thể xóa", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         private void btnTim_Click(object sender, EventArgs e)
         {

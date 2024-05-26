@@ -31,5 +31,9 @@ namespace BUS
         {
             return ct.layhd(maban); 
         }
+        public DataTable layhd_tk(int MaHD)
+        {
+            return ct.layhdtk(MaHD);
+        }
     }
 }

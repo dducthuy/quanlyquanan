@@ -17,6 +17,7 @@ namespace GUI.ChucNangHome
     public partial class UC_thongke : UserControl
     {
         HoaDon_BUS hd = new HoaDon_BUS();
+        ChitietHD_BUS ch = new ChitietHD_BUS();
         public UC_thongke()
         {
             InitializeComponent();
@@ -50,7 +51,7 @@ namespace GUI.ChucNangHome
             dgv1.DataSource = dt;
             dgv1.Columns[0].HeaderText = "Tổng Tiền";
             dgv1.Columns[1].HeaderText = "Mã Hóa Đơn";
-            dgv1.Columns[2].HeaderText = "Ngày tạo";
+            dgv1.Columns[2].HeaderText = "Ngày tạo"; 
             dgv1.Columns[4].Visible = false;
 
             dgv1.Columns[3].HeaderText = "Ngày thanh toán";
@@ -186,7 +187,9 @@ namespace GUI.ChucNangHome
 
         }
         // Mở report cho từng kiểu thống kê
-        private void excell_Click(object sender, EventArgs e)
+       
+
+        private void excell_Click_1(object sender, EventArgs e)
         {
 
             if (dgv1.Columns.Count >= 2 && dgv1.Columns[2].HeaderText == "Tháng")
@@ -214,9 +217,13 @@ namespace GUI.ChucNangHome
 
 
             }
+            else if(dgv1.Columns.Count ==0)
+            {
+                MessageBox.Show("chưa có thông tin thống kê", "Thông báo");
+            }
 
 
-            else 
+            else  
             {
                 string ngay = Ngay.Value.ToString("yyyy-MM-dd"); // Đảm bảo định dạng chuỗi là 'yyyy-MM-dd'
                 DataTable data = hd.DTNgay(ngay);
@@ -227,10 +234,37 @@ namespace GUI.ChucNangHome
                 rpthoadon.Show();
 
             }
+        }
+
+        private void dgv1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+        
+            
+            if (dgv1.Columns.Count >= 2 && dgv1.Columns[1].HeaderText == "Mã Hóa Đơn")
+            {
+                foreach (DataGridViewRow row in dgv1.SelectedRows)
+                {
 
 
+                    txtmahd.Text =row.Cells[1].Value.ToString();
+                   
 
 
+                }
+
+                DataTable dt = ch.layhd_tk(int.Parse(txtmahd.Text));
+                    hdtk11 hd = new hdtk11();
+                    hd.SetDataSource(dt);
+                rpthoadon rp = new rpthoadon();
+                rp.rptv1.ReportSource = hd;
+                rp.Show();
+
+
+            }
+        }
+
+        private void dgv1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

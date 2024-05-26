@@ -44,26 +44,21 @@ namespace BUS
 
             public bool Sua(Ban ban)
             {
-                if (string.IsNullOrEmpty(ban.Tenban) || string.IsNullOrEmpty(ban.MaBan.ToString()))
-                {
-                    throw new AggregateException("Thông tin không hợp lệ!");
-                }
-
-                banDAL.Sua(ban);
-                return true;
+                
+         
+                    banDAL.Sua(ban);
+                    return true;
+                
+               
             }
 
             public string Xoa(Ban ban)
             {
                 bool check = banDAL.Xoa(ban);
-                if (!check)
-                {
-                    throw new AggregateException("Xóa thất bại!");
-                }
-                else
-                {
-                    return "Xóa thành công!";
-                }
+                return "xóa Thành công";
+
+               
+                 
             }
             public void chuyenban(int maban, int mabandi)
             {

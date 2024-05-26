@@ -57,10 +57,12 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnNew = new Guna.UI2.WinForms.Guna2Button();
             this.gb1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.gb1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -469,6 +471,10 @@
             this.gb1.Size = new System.Drawing.Size(248, 515);
             this.gb1.TabIndex = 152;
             // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
+            // 
             // UCMonAn
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -488,6 +494,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.gb1.ResumeLayout(false);
             this.gb1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -519,5 +526,6 @@
         private Guna.UI2.WinForms.Guna2Button tbnThem;
         private Guna.UI2.WinForms.Guna2Button btnNew;
         private Guna.UI2.WinForms.Guna2GroupBox gb1;
+        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }

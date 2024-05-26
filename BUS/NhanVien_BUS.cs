@@ -20,7 +20,7 @@ namespace BUS
                 throw new AggregateException("Thông tin không hợp lệ!");
             }
 
-            if (NV.SDT.Length < 9 && NV.SDT.Length >10)
+            if (NV.SDT.Length <= 9 || !NV.SDT.All(char.IsDigit))
             {
                 throw new AggregateException("Số điện thoại phải có 10 số!");
             }
@@ -60,7 +60,7 @@ namespace BUS
                 throw new AggregateException("Thông tin không hợp lệ!");
             }
 
-            if (NV.SDT.Length <= 9 )
+            if (NV.SDT.Length <= 9 || !NV.SDT.All(char.IsDigit))
             {
                 throw new AggregateException("Số điện thoại phải có 10 số!");
             }
@@ -70,6 +70,7 @@ namespace BUS
         public  string  xoa(NhanVien NV)
         {
             bool check = nvDAL.Xoa(NV);
+           
             if (check ==  false )
             {
                 throw new AggregateException("xóa Thành Thất bại");

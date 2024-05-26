@@ -46,12 +46,15 @@ namespace BUS
                 throw new AggregateException("Thông tin không hợp lệ!");
             }
 
+
             monAnDAL.Sua(monAn);
             return true;
         }
 
         public string XoaMonAn(MonAn monAn)
         {
+           
+
             bool check = monAnDAL.Xoa(monAn);
             if (!check)
             {

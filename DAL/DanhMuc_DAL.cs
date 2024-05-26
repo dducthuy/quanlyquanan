@@ -51,7 +51,7 @@ namespace DAL
 
         public DataTable TimKiem(string Key)
         {
-            string querySelect = "SELECT * FROM DanhMucMon WHERE TenDM LIKE '%" + Key.Trim() + "%'";
+            string querySelect = "SELECT * FROM DanhMucMon WHERE TenDM LIKE N'%" + Key.Trim() + "%'";
             return DBConnect.getData(querySelect);
         }
 
@@ -63,6 +63,11 @@ namespace DAL
         public int Check(string teban)
         {
             string sql = "SELECT COUNT(*) FROM DanhMucMon WHERE TenDM = '" + teban.Trim() + "'";
+            return DBConnect.CheckID(teban, sql);
+        }
+        public int Checkid(string teban)
+        {
+            string sql = "SELECT COUNT(*) FROM DanhMucMon WHERE MaDM = '" + teban.Trim() + "'";
             return DBConnect.CheckID(teban, sql);
         }
 

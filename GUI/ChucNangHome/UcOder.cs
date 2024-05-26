@@ -106,18 +106,35 @@ namespace GUI.ChucNangHome
             }
             txttongtien.Text = TongTien.ToString("c"); 
         }
+        //public void Show(int maban)
+        //{
+        //    lv1.Items.Clear();
+
+        //    List<MenuHD> lv = menuHD.laydsmenu(maban);
+        //    decimal TongTien = 0; // Change the type to decimal
+        //    foreach (MenuHD item in lv)
+        //    {
+        //        ListViewItem listv = new ListViewItem(item.TenMon.ToString());
+        //        listv.SubItems.Add(item.SoLuong.ToString());
+        //        listv.SubItems.Add(item.Gia.ToString()); // No formatting needed here
+        //        listv.SubItems.Add(item.Tong.HasValue ? item.Tong.Value.ToString("0.00") : "0"); // Format to two decimal places
+        //        TongTien += (decimal)(item.Tong ?? 0); // Convert nullable float to decimal
+
+        //        lv1.Items.Add(listv);
+        //    }
+        //    txttongtien.Text = String.Format("{0:C}", TongTien); // Format the total amount as currency
+        //}
+
 
         public int mabn;
         void Btn_Click(object sender, EventArgs e)
         {
-            //Button clickedButton = sender as Button;
-
-            // Ban ban = clickedButton.Tag as Ban;
-            // lv1.Tag =(sender as Button).Tag;
+          
             int maban = ((sender as Button).Tag as Ban).MaBan;
                 Show(maban);
             mabn= maban;
-     
+            txtban.Text = ((sender as Button).Tag as Ban).Tenban.ToString();
+
         }
     
         void loaddanhmuc()
@@ -153,7 +170,14 @@ namespace GUI.ChucNangHome
             string manv = this.MaNV;
             string mamon = (txtmon.SelectedItem as MonAn).MaMon;
             int soluong = (int)sl.Value;
-        
+            if (string.IsNullOrEmpty(txtban.Text))
+            {
+                MessageBox.Show("Chọn một bàn để thêm món");
+
+            }
+            else
+            {
+
             if (mahd == -1)
             {
                 if (soluong < 1)
@@ -214,6 +238,7 @@ namespace GUI.ChucNangHome
             }
             DSban.Controls.Clear();
             ThemBan();
+            }
         }
 
         private void gb1_Click(object sender, EventArgs e)
@@ -225,7 +250,15 @@ namespace GUI.ChucNangHome
         {
          
             int mahd = HoaDon.layMaHD(mabn);
-            if(mahd != -1)
+            if (string.IsNullOrEmpty(txtban.Text))
+            {
+                MessageBox.Show("chưa chọn bàn");
+
+            }
+            else
+            {
+
+            if (mahd != -1)
             {
                 DataTable dt = ct.layhd(mabn);
                 hoadon1 hd = new hoadon1();
@@ -248,6 +281,8 @@ namespace GUI.ChucNangHome
             {
                 MessageBox.Show("bàn chưa có hóa đơn","Cảnh báo!",MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
+            
+            }
           
         }
 
@@ -255,7 +290,23 @@ namespace GUI.ChucNangHome
 
         private void txtChuyen_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txtban.Text))
+            {
+                MessageBox.Show("Bàn không có đẻ truyển");
+
+            }
+            else
+            {
+                
             int mabanchuyen = (cb.SelectedItem as Ban).MaBan;
+                if(mabanchuyen == mabn)
+                {
+                    MessageBox.Show("Không thể chuyển");
+
+                }
+                else
+                {
+
             DialogResult result = MessageBox.Show("ban có muôn chuyển bàn không ", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Stop);
             if (result == DialogResult.Yes)
             {
@@ -264,18 +315,13 @@ namespace GUI.ChucNangHome
             DSban.Controls.Clear();
             ThemBan();
             Show(mabanchuyen);
+                }
 
+
+            }
         }
 
-        private void txtmon_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txttongtien_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }
 

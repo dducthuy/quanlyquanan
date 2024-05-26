@@ -37,6 +37,18 @@ namespace BUS
             var result = tk_dal.checkLogin(TenDangNhap, MatKhau);
 
             // Kiểm tra kiểu dữ liệu của result
+            if(string.IsNullOrEmpty(TenDangNhap))
+            {
+                throw new Exception("Tên đăng nhập đang trống");
+            }
+            if (string.IsNullOrEmpty(MatKhau))
+            {
+                throw new Exception("Mật khẩu đang trống");
+
+            }
+            else
+            {
+
             if (result != null)
             {
      
@@ -57,6 +69,7 @@ namespace BUS
             else
             {
                 throw new Exception("sai tài Khoản hoặc Mật khẩu!");
+            }
             }
         }
 
@@ -97,6 +110,13 @@ namespace BUS
         }
         public bool Sua(string Matk, string TK, string MK, string MaQ)
         {
+            
+            
+
+
+            
+            
+          
             if (string.IsNullOrEmpty(TK) || string.IsNullOrEmpty(MK) || string.IsNullOrEmpty(MaQ))
             {
                 throw new Exception("Thông tin không hợp lệ!");
@@ -123,6 +143,11 @@ namespace BUS
             taiKhoan.MaTK = Matk;
             taiKhoan.MaQ = MaQ;
             bool check = tk_dal.Xoa(taiKhoan);
+            if(Matk== "Admin")
+            {
+                throw new Exception("Không Thể xóa Admin");
+
+            }
             if (check == false) 
             {
                 throw new Exception("xóa Thất bại!");

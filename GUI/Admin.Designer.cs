@@ -75,6 +75,7 @@
             this.btnHiden.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnHiden.TabIndex = 29;
             this.btnHiden.TabStop = false;
+            this.btnHiden.Click += new System.EventHandler(this.btnHiden_Click);
             // 
             // btnMax
             // 
@@ -89,6 +90,7 @@
             this.btnMax.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnMax.TabIndex = 28;
             this.btnMax.TabStop = false;
+            this.btnMax.Click += new System.EventHandler(this.btnMax_Click);
             // 
             // btnclose
             // 
@@ -103,13 +105,14 @@
             this.btnclose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnclose.TabIndex = 27;
             this.btnclose.TabStop = false;
+            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
             // 
             // Panel
             // 
             this.Panel.FillColor = System.Drawing.Color.White;
-            this.Panel.Location = new System.Drawing.Point(191, 31);
+            this.Panel.Location = new System.Drawing.Point(191, 30);
             this.Panel.Name = "Panel";
-            this.Panel.Size = new System.Drawing.Size(748, 532);
+            this.Panel.Size = new System.Drawing.Size(748, 533);
             this.Panel.TabIndex = 29;
             // 
             // guna2Panel1
@@ -230,6 +233,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

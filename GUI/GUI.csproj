@@ -134,6 +134,12 @@
       <DependentUpon>doanhthunam.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="report\hdtk11.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hdtk11.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="report\hoadon1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -201,6 +207,10 @@
     <EmbeddedResource Include="report\doanhthunam.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>doanhthunam.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report\hdtk11.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>hdtk11.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="report\hoadon1.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

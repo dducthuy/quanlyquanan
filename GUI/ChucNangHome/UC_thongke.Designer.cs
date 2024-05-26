@@ -40,7 +40,6 @@
             this.listban = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.dgv1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.txttongtien = new Guna.UI2.WinForms.Guna2TextBox();
-            this.excell = new Guna.UI2.WinForms.Guna2Button();
             this.cnnam = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.cbthang = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
@@ -55,6 +54,8 @@
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.excell = new Guna.UI2.WinForms.Guna2Button();
+            this.txtmahd = new Guna.UI2.WinForms.Guna2TextBox();
             this.listban.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cnnam)).BeginInit();
@@ -134,6 +135,8 @@
             this.dgv1.ThemeStyle.RowsStyle.Height = 24;
             this.dgv1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv1_CellClick);
+            this.dgv1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv1_CellContentClick);
             this.dgv1.Click += new System.EventHandler(this.dgv1_Click);
             // 
             // txttongtien
@@ -163,23 +166,6 @@
             this.txttongtien.Size = new System.Drawing.Size(164, 33);
             this.txttongtien.TabIndex = 158;
             this.txttongtien.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // excell
-            // 
-            this.excell.BorderRadius = 15;
-            this.excell.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.excell.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.excell.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.excell.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.excell.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(166)))), ((int)(((byte)(243)))));
-            this.excell.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.excell.ForeColor = System.Drawing.Color.White;
-            this.excell.Location = new System.Drawing.Point(444, 479);
-            this.excell.Name = "excell";
-            this.excell.Size = new System.Drawing.Size(103, 33);
-            this.excell.TabIndex = 160;
-            this.excell.Text = "print";
-            this.excell.Click += new System.EventHandler(this.excell_Click);
             // 
             // cnnam
             // 
@@ -343,7 +329,7 @@
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(166)))), ((int)(((byte)(243)))));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(563, 3);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(560, 0);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(121, 37);
             this.guna2HtmlLabel5.TabIndex = 173;
@@ -388,10 +374,51 @@
             this.guna2PictureBox1.TabIndex = 159;
             this.guna2PictureBox1.TabStop = false;
             // 
+            // excell
+            // 
+            this.excell.BorderRadius = 15;
+            this.excell.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.excell.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.excell.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.excell.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.excell.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(166)))), ((int)(((byte)(243)))));
+            this.excell.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.excell.ForeColor = System.Drawing.Color.White;
+            this.excell.Image = global::GUI.Properties.Resources.icons8_bill_30;
+            this.excell.ImageSize = new System.Drawing.Size(30, 30);
+            this.excell.Location = new System.Drawing.Point(446, 475);
+            this.excell.Name = "excell";
+            this.excell.Size = new System.Drawing.Size(88, 39);
+            this.excell.TabIndex = 178;
+            this.excell.Click += new System.EventHandler(this.excell_Click_1);
+            // 
+            // txtmahd
+            // 
+            this.txtmahd.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtmahd.DefaultText = "";
+            this.txtmahd.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtmahd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtmahd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtmahd.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtmahd.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtmahd.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtmahd.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtmahd.Location = new System.Drawing.Point(563, 227);
+            this.txtmahd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtmahd.Name = "txtmahd";
+            this.txtmahd.PasswordChar = '\0';
+            this.txtmahd.PlaceholderText = "";
+            this.txtmahd.SelectedText = "";
+            this.txtmahd.Size = new System.Drawing.Size(68, 21);
+            this.txtmahd.TabIndex = 179;
+            this.txtmahd.Visible = false;
+            // 
             // UC_thongke
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.txtmahd);
+            this.Controls.Add(this.excell);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.guna2HtmlLabel4);
             this.Controls.Add(this.guna2HtmlLabel5);
@@ -405,7 +432,6 @@
             this.Controls.Add(this.guna2Separator1);
             this.Controls.Add(this.cbthang);
             this.Controls.Add(this.cnnam);
-            this.Controls.Add(this.excell);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.txttongtien);
             this.Controls.Add(this.listban);
@@ -429,7 +455,6 @@
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel listban;
         private Guna.UI2.WinForms.Guna2TextBox txttongtien;
-        private Guna.UI2.WinForms.Guna2Button excell;
         private Guna.UI2.WinForms.Guna2NumericUpDown cnnam;
         private Guna.UI2.WinForms.Guna2ComboBox cbthang;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
@@ -445,5 +470,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2Button excell;
+        private Guna.UI2.WinForms.Guna2TextBox txtmahd;
     }
 }

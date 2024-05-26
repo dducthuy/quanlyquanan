@@ -15,15 +15,19 @@ namespace BUS
         DanhMuc_DAL danhMucDAL =new DanhMuc_DAL();
         public bool ThemDanhMuc(DanhMuc danhMuc)
         {
-            if (string.IsNullOrEmpty(danhMuc.TenDM) && string.IsNullOrEmpty(danhMuc.MaDM))
+            if (string.IsNullOrEmpty(danhMuc.TenDM) || string.IsNullOrEmpty(danhMuc.MaDM))
             {
                 throw new AggregateException("Thông tin không được để trống!");
             }
-
+            int ckid = danhMucDAL.Checkid(danhMuc.MaDM);
             int check = danhMucDAL.Check(danhMuc.TenDM);
             if (check != 0)
             {
                 throw new AggregateException("Tên danh mục đã tồn tại!");
+            }
+            if (ckid != 0)
+            {
+                throw new AggregateException("Mã danh mục đã tồn tại!");
             }
 
             return danhMucDAL.Them(danhMuc);
@@ -61,6 +65,10 @@ namespace BUS
             {
                 return "Xóa thành công!";
             }
+        }
+        public int Checkid(string teban)
+        {
+           return danhMucDAL.Checkid(teban);
         }
 
     }

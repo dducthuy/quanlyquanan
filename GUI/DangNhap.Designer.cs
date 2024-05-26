@@ -174,6 +174,7 @@
             this.guna2ContainerControl1.Size = new System.Drawing.Size(957, 610);
             this.guna2ContainerControl1.TabIndex = 23;
             this.guna2ContainerControl1.Text = "guna2ContainerControl1";
+            this.guna2ContainerControl1.Click += new System.EventHandler(this.guna2ContainerControl1_Click);
             // 
             // btnHiden
             // 
@@ -225,9 +226,9 @@
             this.guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2PictureBox1.Image = global::GUI.Properties.Resources.abc__1_;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(435, 0);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(511, 0);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(522, 610);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(446, 610);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.guna2PictureBox1.TabIndex = 23;
             this.guna2PictureBox1.TabStop = false;

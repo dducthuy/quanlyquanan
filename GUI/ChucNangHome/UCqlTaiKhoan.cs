@@ -29,17 +29,7 @@ namespace GUI.ChucNangHome
             DSquyen(cbDM);
 
         }
-        //private async void delay()
-        //{
-        //    await Delay_grv();
-        //}
-        ////hàm delay
-        //public async Task Delay_grv()
-        //{ 
-        //    await Task.Delay(1000);// 1s
-        //    guna2DataGridView1.DataSource = TKbus.getData();
-           
-        //}
+      
         
 
         //Thêm 
@@ -82,6 +72,7 @@ namespace GUI.ChucNangHome
             foreach (DataGridViewRow row in guna2DataGridView1.SelectedRows)
             {
                 txtMaTK.Enabled = false;
+                txtTK.Enabled = false;  
 
                 txtMaTK.Text = row.Cells[0].Value.ToString();
                 txtTK.Text = row.Cells[1].Value.ToString();
@@ -135,6 +126,7 @@ namespace GUI.ChucNangHome
 
             }
             txtMaTK.Enabled = true;
+            txtTK.Enabled = true;   
             guna2DataGridView1.DataSource = TKbus.getData();
 
         }
@@ -151,6 +143,11 @@ namespace GUI.ChucNangHome
             string matKhau = txtMk.Text;
             string maTK = txtMaTK.Text;
             string maQ = cbDM.Text;
+            if (txtMaTK.Text == "Admin")
+            {
+                MessageBox.Show("Không thế xóa Admin");
+                return;
+            }
             DialogResult result = MessageBox.Show("Bạn có muốn xóa tài Khoản Không ", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             try
             {
@@ -164,7 +161,7 @@ namespace GUI.ChucNangHome
             }
             catch (Exception ex)
             {
-                MessageBox.Show("bạn cần xóa nhân viên trước :" + ex);
+                MessageBox.Show("không thể xóa");
             }
          
 

@@ -41,23 +41,42 @@ namespace GUI.ChucNangHome
         {
             ma.TenMon = txtTen.Text;
             ma.MaMon = txtId.Text;
-            ma.Gia = float.Parse(txtGia.Text);
+
+           
+            if (!float.TryParse(txtGia.Text, out float gia))
+            {
+                    MessageBox.Show("Giá không đúng định dạng");
+
+                return;
+            }
+
+            ma.Gia = gia;
+
             ma.MaDM = (cbDM.SelectedItem as DanhMuc).MaDM;
             try
             {
-                bool check = monbusc.SuaMonAn(ma);
+           
+               
+                      bool check = monbusc.SuaMonAn(ma);
                 if (check)
                 {
-                    MessageBox.Show("sửa thnahf công");
+                    MessageBox.Show("sửa thành công");
                     dgv1.DataSource = monbusc.LayDuLieu();
 
                 }
+                
+              
             }
             catch(AggregateException ex)
             {
                 MessageBox.Show(ex.Message);
             }
+            catch(Exception es)
+            {
+        
+                MessageBox.Show($"Error: {es.Message}");
 
+            }
         }
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)
@@ -96,10 +115,21 @@ namespace GUI.ChucNangHome
         {
             ma.TenMon = txtTen.Text;
             ma.MaMon = txtId.Text;
-            ma.Gia = float.Parse(txtGia.Text);
+
+         
+            if (!float.TryParse(txtGia.Text, out float gia))
+            {
+                MessageBox.Show("Giá không đúng định dạng");
+
+                return; 
+            }
+
+            ma.Gia = gia;
+
             ma.MaDM = (cbDM.SelectedItem as DanhMuc).MaDM;
             try
-            {
+            {   
+
                 bool checck = monbusc.ThemMonAn(ma);
                 if (checck)
                 {
@@ -162,6 +192,11 @@ namespace GUI.ChucNangHome
                 MessageBox.Show(ex.Message);
 
             }
+            catch(Exception ez)
+            {
+                MessageBox.Show("không thể xóa còn dữ liệu liên quan");
+            }
+            
 
         }
         void loaddanhmuc()

@@ -30,7 +30,7 @@ namespace DAL
         public void Sua(object obj)
         {
             Ban ban = (Ban)obj;
-            string sql = string.Format("UPDATE BanAn SET TrangThai = N'Trống', Tenban = '{0}' WHERE MaBan = '{1}'", ban.Tenban, ban.MaBan);
+            string sql = string.Format("UPDATE BanAn SET  Tenban = '{0}' WHERE MaBan = '{1}'", ban.Tenban, ban.MaBan);
             DBConnect.thucthisql(sql);
         }
 

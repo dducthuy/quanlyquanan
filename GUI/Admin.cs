@@ -49,5 +49,33 @@ namespace GUI
             Panel.Controls.Clear();
 
         }
+
+        private void btnMax_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+
+                WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void btnHiden_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnclose_Click(object sender, EventArgs e)
+        {
+            DialogResult d = MessageBox.Show("Bạn có Muốn Thoát chương Trình Không", "Thông Báo", MessageBoxButtons.YesNo);
+            if (d == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+
+        }
     }
 }
