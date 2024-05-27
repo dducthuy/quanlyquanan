@@ -1,0 +1,22 @@
+D:\workspace\workspace\TH_web\D_A\do_an_1\QL_quan_an\BUS\bin\Release\BUS.dll
+D:\workspace\workspace\TH_web\D_A\do_an_1\QL_quan_an\BUS\bin\Release\BUS.pdb
+D:\workspace\workspace\TH_web\D_A\do_an_1\QL_quan_an\BUS\bin\Release\DAL.dll
+D:\workspace\workspace\TH_web\D_A\do_an_1\QL_quan_an\BUS\bin\Release\DTO.dll
+D:\workspace\workspace\TH_web\D_A\do_an_1\QL_quan_an\BUS\bin\Release\DAL.pdb
+D:\workspace\workspace\TH_web\D_A\do_an_1\QL_quan_an\BUS\bin\Release\DTO.pdb
+D:\workspace\workspace\TH_web\D_A\do_an_1\QL_quan_an\BUS\obj\Release\BUS.csproj.AssemblyReference.cache
+D:\workspace\workspace\TH_web\D_A\do_an_1\QL_quan_an\BUS\obj\Release\BUS.csproj.CoreCompileInputs.cache
+D:\workspace\workspace\TH_web\D_A\do_an_1\QL_quan_an\BUS\obj\Release\BUS.csproj.Up2Date
+D:\workspace\workspace\TH_web\D_A\do_an_1\QL_quan_an\BUS\obj\Release\BUS.dll
+D:\workspace\workspace\TH_web\D_A\do_an_1\QL_quan_an\BUS\obj\Release\BUS.pdb
+C:\Users\Do Duc Thuy\Desktop\caidat\QL_quan_an\BUS\bin\Release\BUS.dll
+C:\Users\Do Duc Thuy\Desktop\caidat\QL_quan_an\BUS\bin\Release\BUS.pdb
+C:\Users\Do Duc Thuy\Desktop\caidat\QL_quan_an\BUS\bin\Release\DAL.dll
+C:\Users\Do Duc Thuy\Desktop\caidat\QL_quan_an\BUS\bin\Release\DTO.dll
+C:\Users\Do Duc Thuy\Desktop\caidat\QL_quan_an\BUS\bin\Release\DAL.pdb
+C:\Users\Do Duc Thuy\Desktop\caidat\QL_quan_an\BUS\bin\Release\DTO.pdb
+C:\Users\Do Duc Thuy\Desktop\caidat\QL_quan_an\BUS\obj\Release\BUS.csproj.AssemblyReference.cache
+C:\Users\Do Duc Thuy\Desktop\caidat\QL_quan_an\BUS\obj\Release\BUS.csproj.CoreCompileInputs.cache
+C:\Users\Do Duc Thuy\Desktop\caidat\QL_quan_an\BUS\obj\Release\BUS.csproj.Up2Date
+C:\Users\Do Duc Thuy\Desktop\caidat\QL_quan_an\BUS\obj\Release\BUS.dll
+C:\Users\Do Duc Thuy\Desktop\caidat\QL_quan_an\BUS\obj\Release\BUS.pdb

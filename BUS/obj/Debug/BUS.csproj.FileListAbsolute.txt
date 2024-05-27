@@ -9,3 +9,14 @@ D:\workspace\workspace\TH_web\D_A\do_an_1\QL_QUAN_AN\BUS\obj\Debug\BUS.csproj.Co
 D:\workspace\workspace\TH_web\D_A\do_an_1\QL_QUAN_AN\BUS\obj\Debug\BUS.csproj.Up2Date
 D:\workspace\workspace\TH_web\D_A\do_an_1\QL_QUAN_AN\BUS\obj\Debug\BUS.dll
 D:\workspace\workspace\TH_web\D_A\do_an_1\QL_QUAN_AN\BUS\obj\Debug\BUS.pdb
+C:\Users\Do Duc Thuy\Desktop\caidat\QL_quan_an\BUS\bin\Debug\BUS.dll
+C:\Users\Do Duc Thuy\Desktop\caidat\QL_quan_an\BUS\bin\Debug\BUS.pdb
+C:\Users\Do Duc Thuy\Desktop\caidat\QL_quan_an\BUS\bin\Debug\DAL.dll
+C:\Users\Do Duc Thuy\Desktop\caidat\QL_quan_an\BUS\bin\Debug\DTO.dll
+C:\Users\Do Duc Thuy\Desktop\caidat\QL_quan_an\BUS\bin\Debug\DAL.pdb
+C:\Users\Do Duc Thuy\Desktop\caidat\QL_quan_an\BUS\bin\Debug\DTO.pdb
+C:\Users\Do Duc Thuy\Desktop\caidat\QL_quan_an\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+C:\Users\Do Duc Thuy\Desktop\caidat\QL_quan_an\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\Do Duc Thuy\Desktop\caidat\QL_quan_an\BUS\obj\Debug\BUS.csproj.Up2Date
+C:\Users\Do Duc Thuy\Desktop\caidat\QL_quan_an\BUS\obj\Debug\BUS.dll
+C:\Users\Do Duc Thuy\Desktop\caidat\QL_quan_an\BUS\obj\Debug\BUS.pdb

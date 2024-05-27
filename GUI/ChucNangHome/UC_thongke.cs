@@ -18,9 +18,11 @@ namespace GUI.ChucNangHome
     {
         HoaDon_BUS hd = new HoaDon_BUS();
         ChitietHD_BUS ch = new ChitietHD_BUS();
+        MonAn_BUS mon = new MonAn_BUS();    
         public UC_thongke()
         {
             InitializeComponent();
+            
         }
 
         private void guna2ContextMenuStrip1_Opening(object sender, CancelEventArgs e)
@@ -40,24 +42,28 @@ namespace GUI.ChucNangHome
 
         private void Ngay_ValueChanged(object sender, EventArgs e)
         {
-            chart1.Visible = false;
 
-            string ngay =  Ngay.Value.ToString("yyyy-MM-dd"); // Đảm bảo định dạng chuỗi là 'yyyy-MM-dd'
-            DataTable dt = hd.DTNgay(ngay);
-            for (int i = 0; i < dgv1.Columns.Count; i++)
-            {
-                dgv1.Columns[i].Visible = true;
-            }
+            tron.Titles.Clear();
+         
+            chart1.Visible = false; 
+            tron.Visible = true;    
+
+          
+            string ngay = Ngay.Value.ToString("yyyy-MM-dd");
+
+       
+            DataTable dt = hd.DTNgay(ngay);  
+            DataTable dt1 = mon.spbanchay(ngay);  
+
+         
             dgv1.DataSource = dt;
             dgv1.Columns[0].HeaderText = "Tổng Tiền";
             dgv1.Columns[1].HeaderText = "Mã Hóa Đơn";
-            dgv1.Columns[2].HeaderText = "Ngày tạo"; 
+            dgv1.Columns[2].HeaderText = "Ngày tạo";
+            dgv1.Columns[3].HeaderText = "Ngày thanh toán";
             dgv1.Columns[4].Visible = false;
 
-            dgv1.Columns[3].HeaderText = "Ngày thanh toán";
-
-
-
+         
             int tongCong = 0;
             if (dt != null && dt.Rows.Count > 0)
             {
@@ -72,6 +78,28 @@ namespace GUI.ChucNangHome
             }
             txttongtien.Text = tongCong.ToString("c");
 
+            tron.Series.Clear();
+
+            Series series = new Series
+            {
+                Name = "Series1",
+                IsValueShownAsLabel = true,
+                ChartType = SeriesChartType.Doughnut,
+
+            };
+            
+            
+
+
+
+            foreach (DataRow row in dt1.Rows)
+            {
+                string tenMon = row["TenMon"].ToString();
+                int totalQuantitySold = Convert.ToInt32(row["ban"]);
+                series.Points.AddXY(tenMon, totalQuantitySold);
+            }
+            tron.Titles.Add("sản phẩm bán chạy ngày");
+            tron.Series.Add(series);
         }
 
 
@@ -79,6 +107,7 @@ namespace GUI.ChucNangHome
         private void cbthang_SelectedIndexChanged(object sender, EventArgs e)
         {
             chart1.Visible = true;
+            tron.Visible = false;
             chart1.Series["Doanh Thu"].Points.Clear();
 
             chart1.Titles.Clear();
@@ -116,9 +145,8 @@ namespace GUI.ChucNangHome
                         DateTime ngayThanhToan;
                         if (DateTime.TryParse(row["ngay"].ToString(), out ngayThanhToan))
                         {
-                            // Add data points to the chart series
                             chart1.Series["Doanh Thu"].Points.AddXY(ngayThanhToan.ToString("dd"), giaTri);
-                           // chart1.Series["Đơn Bán"].Points.AddXY(ngayThanhToan.ToString("dd"), row["SoDonHang"].ToString());
+                         
 
                             tongCong += giaTri;
                         }
@@ -132,6 +160,7 @@ namespace GUI.ChucNangHome
         private void Nam_ValueChanged(object sender, EventArgs e)
         {
             chart1.Visible = true;
+            tron.Visible = false;
 
             chart1.Series["Doanh Thu"].Points.Clear();
           
@@ -264,6 +293,11 @@ namespace GUI.ChucNangHome
         }
 
         private void dgv1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void tron_Click(object sender, EventArgs e)
         {
 
         }

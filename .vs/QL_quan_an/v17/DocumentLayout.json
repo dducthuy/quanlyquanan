@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\",
+  "WorkspaceRootPath": "C:\\Users\\Do Duc Thuy\\Desktop\\caidat\\QL_quan_an\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|d:\\workspace\\workspace\\th_web\\d_a\\do_an_1\\ql_quan_an\\gui\\chucnanghome\\ucmonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|solutionrelative:gui\\chucnanghome\\ucmonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|C:\\Users\\Do Duc Thuy\\Desktop\\caidat\\QL_quan_an\\gui\\chucnanghome\\uc_thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|solutionrelative:gui\\chucnanghome\\uc_thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|d:\\workspace\\workspace\\th_web\\d_a\\do_an_1\\ql_quan_an\\gui\\chucnanghome\\ucmonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|solutionrelative:gui\\chucnanghome\\ucmonan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|C:\\Users\\Do Duc Thuy\\Desktop\\caidat\\QL_quan_an\\gui\\chucnanghome\\uc_thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|solutionrelative:gui\\chucnanghome\\uc_thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,31 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UCMonAn.cs",
-              "DocumentMoniker": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\ChucNangHome\\UCMonAn.cs",
-              "RelativeDocumentMoniker": "GUI\\ChucNangHome\\UCMonAn.cs",
-              "ToolTip": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\ChucNangHome\\UCMonAn.cs",
-              "RelativeToolTip": "GUI\\ChucNangHome\\UCMonAn.cs",
-              "ViewState": "AQIAAL4AAAAAAAAAAAAWwNMAAAAqAAAA",
+              "DocumentIndex": 0,
+              "Title": "UC_thongke.cs",
+              "DocumentMoniker": "C:\\Users\\Do Duc Thuy\\Desktop\\caidat\\QL_quan_an\\GUI\\ChucNangHome\\UC_thongke.cs",
+              "RelativeDocumentMoniker": "GUI\\ChucNangHome\\UC_thongke.cs",
+              "ToolTip": "C:\\Users\\Do Duc Thuy\\Desktop\\caidat\\QL_quan_an\\GUI\\ChucNangHome\\UC_thongke.cs",
+              "RelativeToolTip": "GUI\\ChucNangHome\\UC_thongke.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAIwFAAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T11:26:33.634Z",
+              "WhenOpened": "2024-05-27T16:00:12.118Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UCMonAn.cs [Design]",
-              "DocumentMoniker": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\ChucNangHome\\UCMonAn.cs",
-              "RelativeDocumentMoniker": "GUI\\ChucNangHome\\UCMonAn.cs",
-              "ToolTip": "D:\\workspace\\workspace\\TH_web\\D_A\\do_an_1\\QL_quan_an\\GUI\\ChucNangHome\\UCMonAn.cs [Design]",
-              "RelativeToolTip": "GUI\\ChucNangHome\\UCMonAn.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "UC_thongke.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Do Duc Thuy\\Desktop\\caidat\\QL_quan_an\\GUI\\ChucNangHome\\UC_thongke.cs",
+              "RelativeDocumentMoniker": "GUI\\ChucNangHome\\UC_thongke.cs",
+              "ToolTip": "C:\\Users\\Do Duc Thuy\\Desktop\\caidat\\QL_quan_an\\GUI\\ChucNangHome\\UC_thongke.cs [Design]",
+              "RelativeToolTip": "GUI\\ChucNangHome\\UC_thongke.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T11:26:29.826Z",
+              "WhenOpened": "2024-05-27T15:54:58.735Z",
               "EditorCaption": " [Design]"
             }
           ]

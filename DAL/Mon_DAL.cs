@@ -76,5 +76,11 @@ namespace DAL
             }
             return ds;
         }
-    }
+        ///exec Top5spngay '{0}'
+          public DataTable spbanchay(string ngay)
+        {
+            string sql = string.Format("exec Top5spngay '{0}'", ngay);
+            return DBConnect.getData(sql);
+        }
+}
 }

@@ -32,10 +32,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.listban = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.dgv1 = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -56,12 +59,14 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.excell = new Guna.UI2.WinForms.Guna2Button();
             this.txtmahd = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tron = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.listban.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cnnam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Nam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tron)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -348,21 +353,22 @@
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(3, 3);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Doanh Thu";
-            this.chart1.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Doanh Thu";
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(544, 245);
             this.chart1.TabIndex = 177;
             this.chart1.Text = "chart1";
             title1.Name = "Biểu đồ doanh Thu";
             this.chart1.Titles.Add(title1);
+            this.chart1.Visible = false;
             // 
             // guna2PictureBox1
             // 
@@ -413,10 +419,27 @@
             this.txtmahd.TabIndex = 179;
             this.txtmahd.Visible = false;
             // 
+            // tron
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.tron.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.tron.Legends.Add(legend1);
+            this.tron.Location = new System.Drawing.Point(30, 10);
+            this.tron.Name = "tron";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.tron.Series.Add(series1);
+            this.tron.Size = new System.Drawing.Size(504, 227);
+            this.tron.TabIndex = 180;
+            this.tron.Text = "chart2";
+            // 
             // UC_thongke
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.tron);
             this.Controls.Add(this.txtmahd);
             this.Controls.Add(this.excell);
             this.Controls.Add(this.chart1);
@@ -445,6 +468,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Nam)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tron)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -472,5 +496,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Button excell;
         private Guna.UI2.WinForms.Guna2TextBox txtmahd;
+        private System.Windows.Forms.DataVisualization.Charting.Chart tron;
     }
 }

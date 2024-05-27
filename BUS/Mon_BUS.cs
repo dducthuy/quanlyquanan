@@ -65,5 +65,9 @@ namespace BUS
                 return "Xóa Thành công";
             }
         }
+        public DataTable spbanchay(string ngay)
+        {
+            return monAnDAL.spbanchay(ngay);
+        }
     }
 }

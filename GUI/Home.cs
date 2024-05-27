@@ -21,10 +21,7 @@ namespace GUI
         TaiKhoanBUS TKbus= new TaiKhoanBUS();
         NhanVien_BUS N = new NhanVien_BUS();    
         Ban_BUS Ban = new Ban_BUS();
-        public Home()
-        {
-            InitializeComponent();
-        }
+      
 
         public string MaTK {  get; set; }
         public string MaNV {  get; set; }   
@@ -45,7 +42,7 @@ namespace GUI
                 guna2Button7.Visible=false  ;
             }
         }
-
+       
         string layMaNV(string maTK)
         {
             string MaNV = N.laymnv(maTK);
@@ -81,7 +78,7 @@ namespace GUI
         private void guna2Button7_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Admin admin = new Admin();
+            Admin admin = new Admin(MaTK,  quyen);
             admin.ShowDialog();
         }
 

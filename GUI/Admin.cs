@@ -16,9 +16,13 @@ namespace GUI
     public partial class Admin : Form
     {
         Ban_BUS Ban = new Ban_BUS();
-        public Admin()
+          public  string matk {  get; set; }    
+        public string Quyen { get; set; }
+        public Admin(string MaTK, string quyen)
         {
             InitializeComponent();
+            this.matk = MaTK;
+            this.Quyen = quyen;
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
@@ -29,7 +33,7 @@ namespace GUI
         private void btnHome_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Home home = new Home();
+            Home home = new Home(matk,Quyen);
             home.ShowDialog();
         }
 
