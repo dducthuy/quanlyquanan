@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Do Duc Thuy\\Desktop\\caidat\\QL_quan_an\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|C:\\Users\\Do Duc Thuy\\Desktop\\caidat\\QL_quan_an\\gui\\chucnanghome\\uc_thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|solutionrelative:gui\\chucnanghome\\uc_thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49512E6F-8A37-418D-A043-C6ABA377CC9F}|DAL\\DAL.csproj|C:\\Users\\Do Duc Thuy\\Desktop\\caidat\\QL_quan_an\\dal\\hoadon_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49512E6F-8A37-418D-A043-C6ABA377CC9F}|DAL\\DAL.csproj|solutionrelative:dal\\hoadon_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|C:\\Users\\Do Duc Thuy\\Desktop\\caidat\\QL_quan_an\\gui\\chucnanghome\\uc_thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5564B420-BA8C-44AD-9DE8-C740A20515DC}|GUI\\GUI.csproj|solutionrelative:gui\\chucnanghome\\uc_thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{49512E6F-8A37-418D-A043-C6ABA377CC9F}|DAL\\DAL.csproj|c:\\users\\do duc thuy\\desktop\\caidat\\ql_quan_an\\dal\\chitiethd_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49512E6F-8A37-418D-A043-C6ABA377CC9F}|DAL\\DAL.csproj|solutionrelative:dal\\chitiethd_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,33 +18,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UC_thongke.cs",
-              "DocumentMoniker": "C:\\Users\\Do Duc Thuy\\Desktop\\caidat\\QL_quan_an\\GUI\\ChucNangHome\\UC_thongke.cs",
-              "RelativeDocumentMoniker": "GUI\\ChucNangHome\\UC_thongke.cs",
-              "ToolTip": "C:\\Users\\Do Duc Thuy\\Desktop\\caidat\\QL_quan_an\\GUI\\ChucNangHome\\UC_thongke.cs",
-              "RelativeToolTip": "GUI\\ChucNangHome\\UC_thongke.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAIwFAAAAAXAAAA",
+              "DocumentIndex": 1,
+              "Title": "ChiTietHD_DAL.cs",
+              "DocumentMoniker": "C:\\Users\\Do Duc Thuy\\Desktop\\caidat\\QL_quan_an\\DAL\\ChiTietHD_DAL.cs",
+              "RelativeDocumentMoniker": "DAL\\ChiTietHD_DAL.cs",
+              "ToolTip": "C:\\Users\\Do Duc Thuy\\Desktop\\caidat\\QL_quan_an\\DAL\\ChiTietHD_DAL.cs",
+              "RelativeToolTip": "DAL\\ChiTietHD_DAL.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T16:00:12.118Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-05-29T18:15:50.706Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UC_thongke.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Do Duc Thuy\\Desktop\\caidat\\QL_quan_an\\GUI\\ChucNangHome\\UC_thongke.cs",
-              "RelativeDocumentMoniker": "GUI\\ChucNangHome\\UC_thongke.cs",
-              "ToolTip": "C:\\Users\\Do Duc Thuy\\Desktop\\caidat\\QL_quan_an\\GUI\\ChucNangHome\\UC_thongke.cs [Design]",
-              "RelativeToolTip": "GUI\\ChucNangHome\\UC_thongke.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "HoaDon_DAL.cs",
+              "DocumentMoniker": "C:\\Users\\Do Duc Thuy\\Desktop\\caidat\\QL_quan_an\\DAL\\HoaDon_DAL.cs",
+              "RelativeDocumentMoniker": "DAL\\HoaDon_DAL.cs",
+              "ToolTip": "C:\\Users\\Do Duc Thuy\\Desktop\\caidat\\QL_quan_an\\DAL\\HoaDon_DAL.cs",
+              "RelativeToolTip": "DAL\\HoaDon_DAL.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T15:54:58.735Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-29T18:13:43.671Z",
+              "EditorCaption": ""
             }
           ]
         }
